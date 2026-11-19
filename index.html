@@ -6,7 +6,7 @@
   <title>Anusha N — Aspiring Security &amp; Software Developer</title>
   <meta name="description" content="Portfolio of Anusha N, B.E. CSE (Cyber Security) Student at Adhiyamaan College of Engineering. Focus on cybersecurity, networking, front-end web development, and software projects.">
 
-  <!-- Library 1 of 2: AOS (Animate On Scroll) CSS -->
+  <!-- AOS (Animate On Scroll) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   
   <link rel="stylesheet" href="style.css">
@@ -21,7 +21,7 @@
       <!-- Left: Brand Identity -->
       <a href="#about" class="brand-logo" aria-label="Anusha N - Home">
         <span class="brand-text">Anusha N</span>
-        <span class="brand-divider" aria-hidden="true">|</span>
+        <span class="brand-divider" aria-hidden="true">/</span>
         <span class="brand-tag">Cyber Security</span>
       </a>
 
@@ -89,39 +89,51 @@
   </header>
 
   <main id="main-content">
-    <!-- Header / About / Hero Section -->
+    <!-- Section 1: Header / About / Hero -->
     <section id="about" class="hero-section" aria-labelledby="hero-name">
-      <div class="container hero-container">
+      <div class="container">
         <div class="hero-layout">
           <!-- Text Content -->
           <div class="hero-content">
-            <div class="hero-badge-wrap" data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
+            <div class="hero-status-row" data-aos="fade-up" data-aos-duration="500">
               <span class="status-badge">
                 <span class="status-dot" aria-hidden="true"></span>
-                B.E. CSE (Cyber Security) Student
+                <span>B.E. CSE (Cyber Security) Student</span>
+              </span>
+              <span class="hero-meta-divider" aria-hidden="true">•</span>
+              <span class="hero-location">
+                <svg class="inline-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Hosur, Tamil Nadu</span>
               </span>
             </div>
 
-            <h1 id="hero-name" class="hero-title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">Anusha N</h1>
+            <h1 id="hero-name" class="hero-title" data-aos="fade-up" data-aos-duration="550" data-aos-delay="50">Anusha N</h1>
 
-            <p class="hero-role" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
+            <p class="hero-role" data-aos="fade-up" data-aos-duration="550" data-aos-delay="100">
               B.E. CSE (Cyber Security) Student | Aspiring Security &amp; Software Developer
             </p>
 
-            <p class="hero-location" data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
-              <svg class="inline-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-              <span>Hosur, Tamil Nadu</span>
-            </p>
-
-            <p class="hero-bio" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+            <p class="hero-bio" data-aos="fade-up" data-aos-duration="550" data-aos-delay="150">
               B.E. Computer Science and Engineering (Cyber Security) student at Adhiyamaan College of Engineering (Expected Graduation: 2028). Focused on networking, cybersecurity fundamentals, front-end web development, and practical software projects.
             </p>
 
             <!-- Hero Action Links -->
-            <div class="hero-actions" data-aos="fade-up" data-aos-duration="600" data-aos-delay="480">
+            <div class="hero-actions" data-aos="fade-up" data-aos-duration="550" data-aos-delay="200">
+              <!-- Copy Email Primary Action -->
+              <button id="copy-email-hero-btn" class="btn btn-primary copy-email-btn" type="button" data-email="anusha21narasimman@gmail.com" aria-label="Copy email address anusha21narasimman@gmail.com to clipboard">
+                <svg class="btn-icon copy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <svg class="btn-icon check-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="btn-text">Copy Email</span>
+              </button>
+
               <a href="https://github.com/anusha21032007-git" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
                 <svg class="btn-icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
@@ -135,18 +147,6 @@
                 </svg>
                 <span>LinkedIn</span>
               </a>
-
-              <!-- Copy Email Button -->
-              <button id="copy-email-hero-btn" class="btn btn-primary copy-email-btn" type="button" data-email="anusha21narasimman@gmail.com" aria-label="Copy email address anusha21narasimman@gmail.com to clipboard">
-                <svg class="btn-icon copy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                </svg>
-                <svg class="btn-icon check-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
-                  <polyline points="20 6 9 17 4 12"></polyline>
-                </svg>
-                <span class="btn-text">Copy Email</span>
-              </button>
             </div>
 
             <!-- Notification feedback for copy actions -->
@@ -155,19 +155,22 @@
             </div>
           </div>
 
-          <!-- Profile Photo Frame with Ambient Glow -->
-          <div class="hero-photo-wrap" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
-            <div class="profile-frame">
-              <div class="profile-frame-glow" aria-hidden="true"></div>
-              <div class="profile-frame-inner">
+          <!-- Profile Photo Frame -->
+          <div class="hero-photo-wrap" data-aos="fade-left" data-aos-duration="600" data-aos-delay="150">
+            <div class="profile-card">
+              <div class="profile-frame">
                 <img
                   src="./assets/image.jpeg"
                   alt="Anusha N — Aspiring Security &amp; Software Developer"
                   class="profile-photo"
-                  width="340"
-                  height="425"
+                  width="300"
+                  height="375"
                   loading="eager"
                 />
+              </div>
+              <div class="profile-caption">
+                <span class="profile-caption-name">Anusha N</span>
+                <span class="profile-caption-status">Class of 2028</span>
               </div>
             </div>
           </div>
@@ -175,27 +178,30 @@
       </div>
     </section>
 
-    <!-- Technical Skills Section -->
-    <section id="skills" class="section" aria-labelledby="skills-heading">
+    <!-- Section 2: Technical Skills -->
+    <section id="skills" class="section section-bordered" aria-labelledby="skills-heading">
       <div class="container">
-        <div class="section-header" data-aos="fade-up" data-aos-duration="600">
-          <p class="section-eyebrow">Proficiencies</p>
+        <div class="section-header" data-aos="fade-up" data-aos-duration="500">
+          <div class="section-tag-row">
+            <span class="section-tag">01 / Capabilities</span>
+          </div>
           <h2 id="skills-heading" class="section-title">Technical Skills</h2>
           <p class="section-subtitle">Core competencies organized across languages, development tools, and security fundamentals.</p>
         </div>
 
         <div class="skills-grid">
           <!-- Category 1: Programming Languages -->
-          <article class="skill-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="card-header">
+          <article class="skill-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+            <div class="skill-card-top">
               <div class="category-icon-wrap" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="16 18 22 12 16 6"></polyline>
                   <polyline points="8 6 2 12 8 18"></polyline>
                 </svg>
               </div>
-              <h3 class="category-title">Programming Languages</h3>
+              <span class="skill-category-num">01</span>
             </div>
+            <h3 class="category-title">Programming Languages</h3>
             <ul class="tag-list" aria-label="Programming Languages list">
               <li class="tech-tag">Python</li>
               <li class="tech-tag">C</li>
@@ -204,8 +210,8 @@
           </article>
 
           <!-- Category 2: Web Development -->
-          <article class="skill-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180">
-            <div class="card-header">
+          <article class="skill-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="skill-card-top">
               <div class="category-icon-wrap" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -213,8 +219,9 @@
                   <line x1="12" y1="17" x2="12" y2="21"></line>
                 </svg>
               </div>
-              <h3 class="category-title">Web Development</h3>
+              <span class="skill-category-num">02</span>
             </div>
+            <h3 class="category-title">Web Development</h3>
             <ul class="tag-list" aria-label="Web Development skills list">
               <li class="tech-tag">HTML</li>
               <li class="tech-tag">CSS</li>
@@ -223,8 +230,8 @@
           </article>
 
           <!-- Category 3: Database & Tools -->
-          <article class="skill-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="260">
-            <div class="card-header">
+          <article class="skill-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+            <div class="skill-card-top">
               <div class="category-icon-wrap" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -232,8 +239,9 @@
                   <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
                 </svg>
               </div>
-              <h3 class="category-title">Database &amp; Tools</h3>
+              <span class="skill-category-num">03</span>
             </div>
+            <h3 class="category-title">Database &amp; Tools</h3>
             <ul class="tag-list" aria-label="Database and Tools list">
               <li class="tech-tag">SQL</li>
               <li class="tech-tag">Git</li>
@@ -241,16 +249,17 @@
             </ul>
           </article>
 
-          <!-- Category 4: Cybersecurity & Networking -->
-          <article class="skill-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="340">
-            <div class="card-header">
+          <!-- Category 4: Cybersecurity & Networking (Specialization Card) -->
+          <article class="skill-card skill-card-focus" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+            <div class="skill-card-top">
               <div class="category-icon-wrap" aria-hidden="true">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                 </svg>
               </div>
-              <h3 class="category-title">Cybersecurity &amp; Networking</h3>
+              <span class="skill-badge-focus">Core Focus</span>
             </div>
+            <h3 class="category-title">Cybersecurity &amp; Networking</h3>
             <ul class="tag-list" aria-label="Cybersecurity and Networking skills list">
               <li class="tech-tag">Linux basics</li>
               <li class="tech-tag">Kali Linux basics</li>
@@ -261,30 +270,35 @@
       </div>
     </section>
 
-    <!-- Experience & Education Section -->
-    <section id="experience" class="section section-alt" aria-labelledby="experience-heading">
+    <!-- Section 3: Experience & Education -->
+    <section id="experience" class="section section-alt section-bordered" aria-labelledby="experience-heading">
       <div class="container">
-        <div class="section-header" data-aos="fade-up" data-aos-duration="600">
-          <p class="section-eyebrow">Background</p>
+        <div class="section-header" data-aos="fade-up" data-aos-duration="500">
+          <div class="section-tag-row">
+            <span class="section-tag">02 / Background</span>
+          </div>
           <h2 id="experience-heading" class="section-title">Experience &amp; Education</h2>
           <p class="section-subtitle">Academic foundations in cybersecurity and hands-on developer internship experience.</p>
         </div>
 
         <div class="timeline-grid">
           <!-- Experience Column -->
-          <div class="timeline-column" data-aos="fade-up" data-aos-duration="600" data-aos-delay="120">
-            <h3 class="column-title">
-              <svg class="column-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-              </svg>
-              <span>Experience</span>
-            </h3>
+          <div class="timeline-column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="column-header">
+              <span class="column-eyebrow">Work History</span>
+              <h3 class="column-title">
+                <svg class="column-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <span>Experience</span>
+              </h3>
+            </div>
 
             <article class="timeline-card">
-              <div class="card-top">
-                <span class="timeline-badge">Internship</span>
-                <span class="timeline-period">2 months</span>
+              <div class="card-meta-bar">
+                <span class="meta-pill meta-pill-accent">Internship</span>
+                <span class="meta-pill-muted">2 months</span>
               </div>
               <h4 class="item-title">Front-End Developer Intern</h4>
               <p class="item-organization">Synvolve Intellis</p>
@@ -299,19 +313,22 @@
           </div>
 
           <!-- Education Column -->
-          <div class="timeline-column" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
-            <h3 class="column-title">
-              <svg class="column-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
-                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
-              </svg>
-              <span>Education</span>
-            </h3>
+          <div class="timeline-column" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+            <div class="column-header">
+              <span class="column-eyebrow">Academics</span>
+              <h3 class="column-title">
+                <svg class="column-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <span>Education</span>
+              </h3>
+            </div>
 
             <article class="timeline-card">
-              <div class="card-top">
-                <span class="timeline-badge timeline-badge-edu">Degree</span>
-                <span class="timeline-period">Expected Graduation: 2028</span>
+              <div class="card-meta-bar">
+                <span class="meta-pill meta-pill-secondary">Degree</span>
+                <span class="meta-pill-muted">Expected Graduation: 2028</span>
               </div>
               <h4 class="item-title">Bachelor of Engineering in Computer Science and Engineering (Cyber Security)</h4>
               <p class="item-organization">Adhiyamaan College of Engineering</p>
@@ -331,172 +348,181 @@
       </div>
     </section>
 
-    <!-- Projects Section (7 Live Projects) -->
-    <section id="projects" class="section" aria-labelledby="projects-heading">
+    <!-- Section 4: Projects (Engineered 2 - 3 - 2 Grid) -->
+    <section id="projects" class="section section-bordered" aria-labelledby="projects-heading">
       <div class="container">
-        <div class="section-header" data-aos="fade-up" data-aos-duration="600">
-          <p class="section-eyebrow">Portfolio</p>
+        <div class="section-header" data-aos="fade-up" data-aos-duration="500">
+          <div class="section-tag-row">
+            <span class="section-tag">03 / Works</span>
+          </div>
           <h2 id="projects-heading" class="section-title">Projects</h2>
           <p class="section-subtitle">Live web applications and utilities built for security, productivity, and organization.</p>
         </div>
 
         <div class="projects-grid">
-          <!-- Project 1: Certificate Manager -->
-          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
-            <div class="project-card-body">
-              <div class="project-card-header">
-                <span class="project-number" aria-hidden="true">01</span>
-                <h3 class="project-title">Certificate Manager</h3>
+          <!-- Project 1: Certificate Manager (Row 1, 6-col span) -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+            <div class="project-card-header">
+              <div class="project-indicator">
+                <span class="project-number">01</span>
+                <span class="project-type-label">Security &amp; Web</span>
               </div>
-              <p class="project-description">
-                Web application for organizing, managing, and accessing digital certificates.
-              </p>
+              <h3 class="project-title">Certificate Manager</h3>
             </div>
+            <p class="project-description">
+              Web application for organizing, managing, and accessing digital certificates.
+            </p>
             <div class="project-card-footer">
-              <a href="https://cert.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Certificate Manager in a new tab">
+              <span class="project-host-tag">cert.uniaura.dpdns.org</span>
+              <a href="https://cert.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Certificate Manager in a new tab">
                 <span>Live Demo</span>
                 <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 2: Random Lot Generator -->
-          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">
-            <div class="project-card-body">
-              <div class="project-card-header">
-                <span class="project-number" aria-hidden="true">02</span>
-                <h3 class="project-title">Random Lot Generator</h3>
+          <!-- Project 2: Random Lot Generator (Row 1, 6-col span) -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="project-card-header">
+              <div class="project-indicator">
+                <span class="project-number">02</span>
+                <span class="project-type-label">Interactive Utility</span>
               </div>
-              <p class="project-description">
-                Interactive utility for randomly generating lots and dividing participants into groups.
-              </p>
+              <h3 class="project-title">Random Lot Generator</h3>
             </div>
+            <p class="project-description">
+              Interactive utility for randomly generating lots and dividing participants into groups.
+            </p>
             <div class="project-card-footer">
-              <a href="https://lot-gen.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Random Lot Generator in a new tab">
+              <span class="project-host-tag">lot-gen.uniaura.dpdns.org</span>
+              <a href="https://lot-gen.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Random Lot Generator in a new tab">
                 <span>Live Demo</span>
                 <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 3: File Re-namer -->
-          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
-            <div class="project-card-body">
-              <div class="project-card-header">
-                <span class="project-number" aria-hidden="true">03</span>
-                <h3 class="project-title">File Re-namer</h3>
+          <!-- Project 3: File Re-namer (Row 2, 4-col span) -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+            <div class="project-card-header">
+              <div class="project-indicator">
+                <span class="project-number">03</span>
+                <span class="project-type-label">File Management</span>
               </div>
-              <p class="project-description">
-                Browser-based tool for batch renaming and organizing files efficiently.
-              </p>
+              <h3 class="project-title">File Re-namer</h3>
             </div>
+            <p class="project-description">
+              Browser-based tool for batch renaming and organizing files efficiently.
+            </p>
             <div class="project-card-footer">
-              <a href="https://file-re-namer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of File Re-namer in a new tab">
+              <span class="project-host-tag">file-re-namer.vercel.app</span>
+              <a href="https://file-re-namer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of File Re-namer in a new tab">
                 <span>Live Demo</span>
                 <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 4: Zip Link -->
-          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="project-card-body">
-              <div class="project-card-header">
-                <span class="project-number" aria-hidden="true">04</span>
-                <h3 class="project-title">Zip Link</h3>
+          <!-- Project 4: Zip Link (Row 2, 4-col span) -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="project-card-header">
+              <div class="project-indicator">
+                <span class="project-number">04</span>
+                <span class="project-type-label">Compression Utility</span>
               </div>
-              <p class="project-description">
-                File compression utility that packages files and generates shareable links.
-              </p>
+              <h3 class="project-title">Zip Link</h3>
             </div>
+            <p class="project-description">
+              File compression utility that packages files and generates shareable links.
+            </p>
             <div class="project-card-footer">
-              <a href="https://zip-link-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Zip Link in a new tab">
+              <span class="project-host-tag">zip-link-five.vercel.app</span>
+              <a href="https://zip-link-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Zip Link in a new tab">
                 <span>Live Demo</span>
                 <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 5: Expense Tracker -->
-          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180">
-            <div class="project-card-body">
-              <div class="project-card-header">
-                <span class="project-number" aria-hidden="true">05</span>
-                <h3 class="project-title">Expense Tracker</h3>
+          <!-- Project 5: Expense Tracker (Row 2, 4-col span) -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+            <div class="project-card-header">
+              <div class="project-indicator">
+                <span class="project-number">05</span>
+                <span class="project-type-label">Personal Finance</span>
               </div>
-              <p class="project-description">
-                Personal finance tracker for logging, categorizing, and monitoring daily expenses.
-              </p>
+              <h3 class="project-title">Expense Tracker</h3>
             </div>
+            <p class="project-description">
+              Personal finance tracker for logging, categorizing, and monitoring daily expenses.
+            </p>
             <div class="project-card-footer">
-              <a href="https://expense-dnzg.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Expense Tracker in a new tab">
+              <span class="project-host-tag">expense-dnzg.vercel.app</span>
+              <a href="https://expense-dnzg.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Expense Tracker in a new tab">
                 <span>Live Demo</span>
                 <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 6: Password Vault -->
-          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="260">
-            <div class="project-card-body">
-              <div class="project-card-header">
-                <span class="project-number" aria-hidden="true">06</span>
-                <h3 class="project-title">Password Vault</h3>
+          <!-- Project 6: Password Vault (Row 3, 6-col span) -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+            <div class="project-card-header">
+              <div class="project-indicator">
+                <span class="project-number">06</span>
+                <span class="project-type-label">Security &amp; Auth</span>
               </div>
-              <p class="project-description">
-                Secure credential management application for storing and organizing passwords.
-              </p>
+              <h3 class="project-title">Password Vault</h3>
             </div>
+            <p class="project-description">
+              Secure credential management application for storing and organizing passwords.
+            </p>
             <div class="project-card-footer">
-              <a href="https://pasvault.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Password Vault in a new tab">
+              <span class="project-host-tag">pasvault.netlify.app</span>
+              <a href="https://pasvault.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Password Vault in a new tab">
                 <span>Live Demo</span>
                 <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </a>
             </div>
           </article>
 
-          <!-- Project 7: Todo Mission -->
-          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180">
-            <div class="project-card-body">
-              <div class="project-card-header">
-                <span class="project-number" aria-hidden="true">07</span>
-                <h3 class="project-title">Todo Mission</h3>
+          <!-- Project 7: Todo Mission (Row 3, 6-col span) -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="project-card-header">
+              <div class="project-indicator">
+                <span class="project-number">07</span>
+                <span class="project-type-label">Task Management</span>
               </div>
-              <p class="project-description">
-                Task and mission management web app for tracking daily goals and priorities.
-              </p>
+              <h3 class="project-title">Todo Mission</h3>
             </div>
+            <p class="project-description">
+              Task and mission management web app for tracking daily goals and priorities.
+            </p>
             <div class="project-card-footer">
-              <a href="https://todomission.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Todo Mission in a new tab">
+              <span class="project-host-tag">todomission.netlify.app</span>
+              <a href="https://todomission.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Todo Mission in a new tab">
                 <span>Live Demo</span>
                 <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
                 </svg>
               </a>
             </div>
@@ -505,23 +531,28 @@
       </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="section section-alt" aria-labelledby="certifications-heading">
+    <!-- Section 5: Certifications -->
+    <section id="certifications" class="section section-alt section-bordered" aria-labelledby="certifications-heading">
       <div class="container">
-        <div class="section-header" data-aos="fade-up" data-aos-duration="600">
-          <p class="section-eyebrow">Credentials</p>
+        <div class="section-header" data-aos="fade-up" data-aos-duration="500">
+          <div class="section-tag-row">
+            <span class="section-tag">04 / Credentials</span>
+          </div>
           <h2 id="certifications-heading" class="section-title">Certifications</h2>
           <p class="section-subtitle">Verified professional coursework in cybersecurity principles and computer networks.</p>
         </div>
 
         <div class="certifications-grid">
           <!-- Cert 1 -->
-          <article class="cert-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="cert-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="8" r="7"></circle>
-                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-              </svg>
+          <article class="cert-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="50">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="cert-status-badge">Verified</span>
             </div>
             <div class="cert-info">
               <h3 class="cert-title">Introduction to Cybersecurity</h3>
@@ -530,12 +561,15 @@
           </article>
 
           <!-- Cert 2 -->
-          <article class="cert-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-            <div class="cert-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="8" r="7"></circle>
-                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-              </svg>
+          <article class="cert-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="cert-status-badge">Verified</span>
             </div>
             <div class="cert-info">
               <h3 class="cert-title">Network Fundamentals</h3>
@@ -544,12 +578,15 @@
           </article>
 
           <!-- Cert 3 -->
-          <article class="cert-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
-            <div class="cert-icon-wrap" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="8" r="7"></circle>
-                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
-              </svg>
+          <article class="cert-card" data-aos="fade-up" data-aos-duration="500" data-aos-delay="150">
+            <div class="cert-card-header">
+              <div class="cert-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <span class="cert-status-badge">Verified</span>
             </div>
             <div class="cert-info">
               <h3 class="cert-title">Exploring Networking with Cisco</h3>
@@ -560,12 +597,14 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section" aria-labelledby="contact-heading">
+    <!-- Section 6: Contact -->
+    <section id="contact" class="section section-bordered" aria-labelledby="contact-heading">
       <div class="container">
-        <div class="contact-box" data-aos="fade-up" data-aos-duration="650">
+        <div class="contact-box" data-aos="fade-up" data-aos-duration="500">
           <div class="contact-header">
-            <p class="section-eyebrow">Connect</p>
+            <div class="section-tag-row">
+              <span class="section-tag">05 / Connect</span>
+            </div>
             <h2 id="contact-heading" class="section-title">Get in Touch</h2>
             <p class="contact-text">
               Interested in collaborating, internship opportunities, or discussing cybersecurity and software development? Reach out directly via email or connect on LinkedIn and GitHub.
@@ -606,7 +645,7 @@
               </div>
             </div>
 
-            <!-- Profile Links -->
+            <!-- Profile Links Grid -->
             <div class="contact-links-grid">
               <a href="https://github.com/anusha21032007-git" target="_blank" rel="noopener noreferrer" class="contact-link-card">
                 <div class="contact-link-icon" aria-hidden="true">
@@ -676,10 +715,10 @@
     </div>
   </footer>
 
-  <!-- Library 1 of 2: AOS (Animate On Scroll) JS -->
+  <!-- AOS (Animate On Scroll) JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-  <!-- Library 2 of 2: Lenis Smooth Scroll JS -->
+  <!-- Lenis Smooth Scroll JS -->
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
 
   <!-- Main Application Script -->
