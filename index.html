@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anusha N — Aspiring Security &amp; Software Developer</title>
+  <meta name="description" content="Portfolio of Anusha N, B.E. CSE (Cyber Security) Student at Adhiyamaan College of Engineering. Focus on cybersecurity, networking, front-end web development, and software projects.">
+
+  <!-- Library 1 of 2: AOS (Animate On Scroll) CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation Bar -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Left: Brand Identity -->
+      <a href="#about" class="brand-logo" aria-label="Anusha N - Home">
+        <span class="brand-text">Anusha N</span>
+        <span class="brand-divider" aria-hidden="true">|</span>
+        <span class="brand-tag">Cyber Security</span>
+      </a>
+
+      <!-- Right: Navigation Links & Actions Grouped Together -->
+      <div class="header-right">
+        <!-- Desktop Navigation Links -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link active">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Action Buttons (Theme Toggle & Mobile Menu) -->
+        <div class="header-actions">
+          <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+            <!-- Sun Icon (shown in dark theme) -->
+            <svg class="theme-icon sun-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (shown in light theme) -->
+            <svg class="theme-icon moon-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+
+          <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <svg class="menu-open-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="menu-close-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation" hidden>
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link active">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- Header / About / Hero Section -->
+    <section id="about" class="hero-section" aria-labelledby="hero-name">
+      <div class="container hero-container">
+        <div class="hero-layout">
+          <!-- Text Content -->
+          <div class="hero-content">
+            <div class="hero-badge-wrap" data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
+              <span class="status-badge">
+                <span class="status-dot" aria-hidden="true"></span>
+                B.E. CSE (Cyber Security) Student
+              </span>
+            </div>
+
+            <h1 id="hero-name" class="hero-title" data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">Anusha N</h1>
+
+            <p class="hero-role" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
+              B.E. CSE (Cyber Security) Student | Aspiring Security &amp; Software Developer
+            </p>
+
+            <p class="hero-location" data-aos="fade-up" data-aos-duration="600" data-aos-delay="320">
+              <svg class="inline-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Hosur, Tamil Nadu</span>
+            </p>
+
+            <p class="hero-bio" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+              B.E. Computer Science and Engineering (Cyber Security) student at Adhiyamaan College of Engineering (Expected Graduation: 2028). Focused on networking, cybersecurity fundamentals, front-end web development, and practical software projects.
+            </p>
+
+            <!-- Hero Action Links -->
+            <div class="hero-actions" data-aos="fade-up" data-aos-duration="600" data-aos-delay="480">
+              <a href="https://github.com/anusha21032007-git" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg class="btn-icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://linkedin.com/in/anusha-n-58979437a" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <svg class="btn-icon" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+
+              <!-- Copy Email Button -->
+              <button id="copy-email-hero-btn" class="btn btn-primary copy-email-btn" type="button" data-email="anusha21narasimman@gmail.com" aria-label="Copy email address anusha21narasimman@gmail.com to clipboard">
+                <svg class="btn-icon copy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <svg class="btn-icon check-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span class="btn-text">Copy Email</span>
+              </button>
+            </div>
+
+            <!-- Notification feedback for copy actions -->
+            <div id="copy-notification" class="copy-notification" role="status" aria-live="polite" aria-atomic="true" hidden>
+              Email copied to clipboard!
+            </div>
+          </div>
+
+          <!-- Profile Photo Frame with Ambient Glow -->
+          <div class="hero-photo-wrap" data-aos="fade-left" data-aos-duration="700" data-aos-delay="200">
+            <div class="profile-frame">
+              <div class="profile-frame-glow" aria-hidden="true"></div>
+              <div class="profile-frame-inner">
+                <img
+                  src="./assets/image.jpeg"
+                  alt="Anusha N — Aspiring Security &amp; Software Developer"
+                  class="profile-photo"
+                  width="340"
+                  height="425"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+          <p class="section-eyebrow">Proficiencies</p>
+          <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">Core competencies organized across languages, development tools, and security fundamentals.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Programming Languages -->
+          <article class="skill-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <div class="card-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <ul class="tag-list" aria-label="Programming Languages list">
+              <li class="tech-tag">Python</li>
+              <li class="tech-tag">C</li>
+              <li class="tech-tag">C++</li>
+            </ul>
+          </article>
+
+          <!-- Category 2: Web Development -->
+          <article class="skill-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180">
+            <div class="card-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <ul class="tag-list" aria-label="Web Development skills list">
+              <li class="tech-tag">HTML</li>
+              <li class="tech-tag">CSS</li>
+              <li class="tech-tag">JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- Category 3: Database & Tools -->
+          <article class="skill-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="260">
+            <div class="card-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Database &amp; Tools</h3>
+            </div>
+            <ul class="tag-list" aria-label="Database and Tools list">
+              <li class="tech-tag">SQL</li>
+              <li class="tech-tag">Git</li>
+              <li class="tech-tag">GitHub</li>
+            </ul>
+          </article>
+
+          <!-- Category 4: Cybersecurity & Networking -->
+          <article class="skill-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="340">
+            <div class="card-header">
+              <div class="category-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Cybersecurity &amp; Networking</h3>
+            </div>
+            <ul class="tag-list" aria-label="Cybersecurity and Networking skills list">
+              <li class="tech-tag">Linux basics</li>
+              <li class="tech-tag">Kali Linux basics</li>
+              <li class="tech-tag">Networking protocols</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="section section-alt" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+          <p class="section-eyebrow">Background</p>
+          <h2 id="experience-heading" class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">Academic foundations in cybersecurity and hands-on developer internship experience.</p>
+        </div>
+
+        <div class="timeline-grid">
+          <!-- Experience Column -->
+          <div class="timeline-column" data-aos="fade-up" data-aos-duration="600" data-aos-delay="120">
+            <h3 class="column-title">
+              <svg class="column-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+              <span>Experience</span>
+            </h3>
+
+            <article class="timeline-card">
+              <div class="card-top">
+                <span class="timeline-badge">Internship</span>
+                <span class="timeline-period">2 months</span>
+              </div>
+              <h4 class="item-title">Front-End Developer Intern</h4>
+              <p class="item-organization">Synvolve Intellis</p>
+              <p class="item-meta">
+                <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Coimbatore, Tamil Nadu | Remote/Online</span>
+              </p>
+            </article>
+          </div>
+
+          <!-- Education Column -->
+          <div class="timeline-column" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
+            <h3 class="column-title">
+              <svg class="column-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span>Education</span>
+            </h3>
+
+            <article class="timeline-card">
+              <div class="card-top">
+                <span class="timeline-badge timeline-badge-edu">Degree</span>
+                <span class="timeline-period">Expected Graduation: 2028</span>
+              </div>
+              <h4 class="item-title">Bachelor of Engineering in Computer Science and Engineering (Cyber Security)</h4>
+              <p class="item-organization">Adhiyamaan College of Engineering</p>
+              <p class="item-meta">
+                <svg class="meta-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Hosur, Tamil Nadu</span>
+              </p>
+              <p class="item-description">
+                Focus on secure systems design, network protocols, cybersecurity, and software development.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section (7 Live Projects) -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+          <p class="section-eyebrow">Portfolio</p>
+          <h2 id="projects-heading" class="section-title">Projects</h2>
+          <p class="section-subtitle">Live web applications and utilities built for security, productivity, and organization.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Certificate Manager -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="80">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-number" aria-hidden="true">01</span>
+                <h3 class="project-title">Certificate Manager</h3>
+              </div>
+              <p class="project-description">
+                Web application for organizing, managing, and accessing digital certificates.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://cert.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Certificate Manager in a new tab">
+                <span>Live Demo</span>
+                <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Random Lot Generator -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="160">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-number" aria-hidden="true">02</span>
+                <h3 class="project-title">Random Lot Generator</h3>
+              </div>
+              <p class="project-description">
+                Interactive utility for randomly generating lots and dividing participants into groups.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://lot-gen.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Random Lot Generator in a new tab">
+                <span>Live Demo</span>
+                <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: File Re-namer -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="240">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-number" aria-hidden="true">03</span>
+                <h3 class="project-title">File Re-namer</h3>
+              </div>
+              <p class="project-description">
+                Browser-based tool for batch renaming and organizing files efficiently.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://file-re-namer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of File Re-namer in a new tab">
+                <span>Live Demo</span>
+                <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Zip Link -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-number" aria-hidden="true">04</span>
+                <h3 class="project-title">Zip Link</h3>
+              </div>
+              <p class="project-description">
+                File compression utility that packages files and generates shareable links.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://zip-link-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Zip Link in a new tab">
+                <span>Live Demo</span>
+                <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Expense Tracker -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-number" aria-hidden="true">05</span>
+                <h3 class="project-title">Expense Tracker</h3>
+              </div>
+              <p class="project-description">
+                Personal finance tracker for logging, categorizing, and monitoring daily expenses.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://expense-dnzg.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Expense Tracker in a new tab">
+                <span>Live Demo</span>
+                <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6: Password Vault -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="260">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-number" aria-hidden="true">06</span>
+                <h3 class="project-title">Password Vault</h3>
+              </div>
+              <p class="project-description">
+                Secure credential management application for storing and organizing passwords.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://pasvault.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Password Vault in a new tab">
+                <span>Live Demo</span>
+                <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 7: Todo Mission -->
+          <article class="project-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180">
+            <div class="project-card-body">
+              <div class="project-card-header">
+                <span class="project-number" aria-hidden="true">07</span>
+                <h3 class="project-title">Todo Mission</h3>
+              </div>
+              <p class="project-description">
+                Task and mission management web app for tracking daily goals and priorities.
+              </p>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://todomission.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary live-demo-btn" aria-label="Open live demo of Todo Mission in a new tab">
+                <span>Live Demo</span>
+                <svg class="btn-icon-sm" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-alt" aria-labelledby="certifications-heading">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up" data-aos-duration="600">
+          <p class="section-eyebrow">Credentials</p>
+          <h2 id="certifications-heading" class="section-title">Certifications</h2>
+          <p class="section-subtitle">Verified professional coursework in cybersecurity principles and computer networks.</p>
+        </div>
+
+        <div class="certifications-grid">
+          <!-- Cert 1 -->
+          <article class="cert-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <div class="cert-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-title">Introduction to Cybersecurity</h3>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+          </article>
+
+          <!-- Cert 2 -->
+          <article class="cert-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <div class="cert-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-title">Network Fundamentals</h3>
+              <p class="cert-issuer">Infosys Springboard</p>
+            </div>
+          </article>
+
+          <!-- Cert 3 -->
+          <article class="cert-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+            <div class="cert-icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="cert-info">
+              <h3 class="cert-title">Exploring Networking with Cisco</h3>
+              <p class="cert-issuer">Cisco Networking Academy</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="contact-box" data-aos="fade-up" data-aos-duration="650">
+          <div class="contact-header">
+            <p class="section-eyebrow">Connect</p>
+            <h2 id="contact-heading" class="section-title">Get in Touch</h2>
+            <p class="contact-text">
+              Interested in collaborating, internship opportunities, or discussing cybersecurity and software development? Reach out directly via email or connect on LinkedIn and GitHub.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <!-- Email Action Block -->
+            <div class="contact-card email-contact-card">
+              <div class="contact-card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-details">
+                <span class="contact-card-label">Email Address</span>
+                <span class="contact-email-text">anusha21narasimman@gmail.com</span>
+              </div>
+              <div class="contact-card-btns">
+                <button class="btn btn-sm btn-primary copy-email-btn" type="button" data-email="anusha21narasimman@gmail.com" aria-label="Copy email anusha21narasimman@gmail.com">
+                  <svg class="btn-icon copy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                  </svg>
+                  <svg class="btn-icon check-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span class="btn-text">Copy</span>
+                </button>
+                <a href="mailto:anusha21narasimman@gmail.com" class="btn btn-sm btn-secondary" aria-label="Open mail client to write to anusha21narasimman@gmail.com">
+                  <svg class="btn-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Open Mail</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Profile Links -->
+            <div class="contact-links-grid">
+              <a href="https://github.com/anusha21032007-git" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                <div class="contact-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="contact-link-content">
+                  <span class="contact-link-title">GitHub</span>
+                  <span class="contact-link-handle">anusha21032007-git</span>
+                </div>
+                <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+
+              <a href="https://linkedin.com/in/anusha-n-58979437a" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                <div class="contact-link-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="contact-link-content">
+                  <span class="contact-link-title">LinkedIn</span>
+                  <span class="contact-link-handle">anusha-n-58979437a</span>
+                </div>
+                <svg class="external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        <p>&copy; <span id="year">2026</span> Anusha N. All rights reserved.</p>
+        <p class="footer-subtext">B.E. CSE (Cyber Security) &bull; Adhiyamaan College of Engineering</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Quick Links">
+        <ul class="footer-links">
+          <li>
+            <a href="https://github.com/anusha21032007-git" target="_blank" rel="noopener noreferrer" class="footer-link">
+              GitHub
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/anusha-n-58979437a" target="_blank" rel="noopener noreferrer" class="footer-link">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="mailto:anusha21narasimman@gmail.com" class="footer-link">
+              Email
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Library 1 of 2: AOS (Animate On Scroll) JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <!-- Library 2 of 2: Lenis Smooth Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Main Application Script -->
+  <script src="script.js"></script>
+</body>
+</html>
