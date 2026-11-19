@@ -153,8 +153,8 @@
     const storedTheme = localStorage.getItem(STORAGE_KEY);
     const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    // Set initial theme
-    const currentTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+    // Set initial theme (Default to beautiful futuristic light theme)
+    const currentTheme = storedTheme || 'light';
     if (currentTheme === 'dark') {
       document.documentElement.setAttribute('data-theme', 'dark');
       themeToggle.setAttribute('aria-label', 'Switch to light theme');
