@@ -3,237 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anusha N — Developer &amp; Cyber Security Portfolio</title>
-  <meta name="description" content="Portfolio of Anusha N, B.E. CSE (Cyber Security) Student at Adhiyamaan College of Engineering. Focused on cybersecurity, networking, front-end development, and live software projects.">
+  <title>Anusha N — Cyber Security &amp; Software Developer</title>
+  <meta name="description" content="Personal portfolio of Anusha N, B.E. CSE (Cyber Security) Student at Adhiyamaan College of Engineering. Specializing in network fundamentals, cybersecurity, front-end development, and practical software engineering.">
 
-  <!-- Editorial Google Fonts: Playfair Display for editorial headlines, Plus Jakarta Sans for clean body, JetBrains Mono for accents -->
+  <!-- Typography: Plus Jakarta Sans for UI precision, Playfair Display for editorial accents, JetBrains Mono for telemetry -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- AOS (Animate On Scroll) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="editorial-body">
+<body class="site-body">
   <!-- Accessibility Skip Link -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Top Editorial Header / Navigation -->
-  <header class="editorial-header">
-    <div class="header-inner">
-      <!-- Monogram Brand Logo -->
-      <a href="#hero" class="brand-monogram" aria-label="Anusha N — Home">
-        <span class="mono-letter">A</span>
-        <span class="mono-slash">/</span>
+  <!-- Top Executive Navigation Bar -->
+  <header class="site-header">
+    <div class="site-container header-inner">
+      <!-- Left: Identity Brand -->
+      <a href="#about" class="brand-link" aria-label="Anusha N — Home">
+        <span class="brand-name">Anusha N</span>
+        <span class="brand-sep" aria-hidden="true">/</span>
+        <span class="brand-role">Cyber Security</span>
       </a>
 
-      <!-- Center Navigation Links -->
-      <nav class="desktop-nav" aria-label="Main Navigation">
-        <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#certifications" class="nav-link">Certifications</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+      <!-- Right: Main Nav Links & Actions -->
+      <div class="header-right-group">
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="#about" class="nav-link active">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Background</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+            <li><a href="#contact" class="nav-link">Connect</a></li>
+          </ul>
+        </nav>
 
-      <!-- Right Actions: Theme Toggle & Mobile Menu -->
-      <div class="header-actions">
-        <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle theme mode" title="Toggle theme">
-          <span class="theme-btn-text">THEME</span>
-          <svg class="theme-icon sun-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <svg class="theme-icon moon-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-        </button>
+        <!-- Actions: Theme Switcher & Mobile Menu Trigger -->
+        <div class="header-actions">
+          <button id="theme-toggle" class="action-btn theme-toggle" type="button" aria-label="Switch theme mode" title="Toggle theme">
+            <!-- Sun Icon (shown in dark theme) -->
+            <svg class="theme-icon sun-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (shown in light theme) -->
+            <svg class="theme-icon moon-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
 
-        <button id="mobile-menu-btn" class="mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
-          <span class="menu-label">MENU</span>
-          <span class="menu-bars" aria-hidden="true">
-            <span class="bar bar-1"></span>
-            <span class="bar bar-2"></span>
-          </span>
-        </button>
+          <button id="mobile-menu-btn" class="action-btn mobile-menu-btn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+            <svg class="menu-icon-bars" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="menu-icon-close" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
 
     <!-- Mobile Navigation Drawer -->
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile Navigation" hidden>
       <ul class="mobile-nav-links">
-        <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
-        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#about" class="mobile-nav-link active">About</a></li>
         <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
-        <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+        <li><a href="#experience" class="mobile-nav-link">Background</a></li>
         <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
         <li><a href="#certifications" class="mobile-nav-link">Certifications</a></li>
-        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Connect</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main-content">
     <!-- ====================================================================
-         SECTION 1: HERO (EXACT REFERENCE LAYOUT: VERTICAL RIBBON + EDITORIAL SPLIT)
+         SECTION 1: HERO & ABOUT PROFILE
          ==================================================================== -->
-    <section id="hero" class="hero-section" aria-labelledby="hero-title">
-      
-      <!-- Far-Left Dark Vertical Ribbon -->
-      <aside class="hero-vertical-ribbon" aria-hidden="true">
-        <span class="ribbon-text">AVAILABLE FOR ROLES &amp; FREELANCE</span>
-        <span class="ribbon-star">✦</span>
-      </aside>
-
-      <!-- Main Hero Canvas -->
-      <div class="hero-canvas">
-        <div class="hero-grid">
+    <section id="about" class="hero-section" aria-labelledby="hero-title">
+      <div class="site-container">
+        <div class="hero-layout-grid">
           
-          <!-- Left Content Column -->
-          <div class="hero-content" data-aos="fade-up" data-aos-duration="700">
-            <p class="hero-greeting">HEY, I'M ANUSHA</p>
+          <!-- Column 1: Primary Profile Statement & Actions -->
+          <div class="hero-content-col" data-aos="fade-up" data-aos-duration="450">
             
+            <!-- Metadata & Location Pill -->
+            <div class="hero-meta-strip">
+              <span class="meta-status-pill">
+                <span class="status-indicator-dot" aria-hidden="true"></span>
+                <span>B.E. CSE (Cyber Security) &bull; Class of 2028</span>
+              </span>
+              <span class="meta-location-tag">
+                <svg class="meta-loc-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Hosur, Tamil Nadu</span>
+              </span>
+            </div>
+
+            <!-- Headline: Name & Specialization -->
             <h1 id="hero-title" class="hero-headline">
-              Crafting digital experiences that <span class="headline-italic">inspire.</span>
+              Anusha N<span class="headline-accent">.</span>
             </h1>
 
-            <p class="hero-bio">
+            <p class="hero-role-title">
+              B.E. CSE (Cyber Security) Student <span class="role-divider">|</span> Aspiring Security &amp; Software Developer
+            </p>
+
+            <p class="hero-bio-narrative">
               B.E. Computer Science and Engineering (Cyber Security) student at Adhiyamaan College of Engineering (Expected Graduation: 2028). Focused on networking, cybersecurity fundamentals, front-end web development, and practical software projects.
             </p>
 
-            <div class="hero-actions">
-              <!-- View My Work Button with circled arrow -->
-              <a href="#projects" class="editorial-btn">
-                <span class="btn-text">VIEW MY WORK</span>
-                <span class="btn-arrow-circle" aria-hidden="true">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"></line>
-                    <polyline points="12 5 19 12 12 19"></polyline>
-                  </svg>
-                </span>
+            <!-- Primary Command Actions (Direct project exploration & contact link) -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Projects</span>
+                <svg class="btn-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"></line>
+                  <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
               </a>
-            </div>
-          </div>
 
-          <!-- Right Portrait Photo Column -->
-          <div class="hero-visual" data-aos="fade-left" data-aos-duration="800">
-            <div class="portrait-container">
-              <div class="portrait-frame">
-                <img
-                  src="./assets/image.jpeg"
-                  alt="Anusha N — Aspiring Security &amp; Software Developer"
-                  class="portrait-img"
-                  width="480"
-                  height="600"
-                  loading="eager"
-                />
-              </div>
-              <div class="portrait-meta-tag" aria-hidden="true">
-                <span>BASED IN HOSUR, INDIA —</span>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 2: ABOUT & SKILLS (EXACT 3-BLOCK EDITORIAL ROW IN REFERENCE)
-         ==================================================================== -->
-    <section id="about" class="about-section" aria-labelledby="about-heading">
-      <div class="editorial-container">
-        <div class="about-triptych-grid">
-          
-          <!-- Block 1: About Intro -->
-          <div class="about-intro-block" data-aos="fade-up" data-aos-duration="600">
-            <p class="section-eyebrow">ABOUT ME +</p>
-            <h2 id="about-heading" class="about-headline">
-              I design and code secure software <span class="headline-italic">for the web.</span>
-            </h2>
-            <p class="about-subtext">
-              Passionate about network protocols, defensive security architecture, and developing accessible, high-performance web applications that solve real-world problems.
-            </p>
-            <a href="#experience" class="editorial-btn about-btn">
-              <span class="btn-text">MORE ABOUT ME</span>
-              <span class="btn-arrow-circle" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <a href="#contact" class="btn btn-secondary">
+                <span>Get in Touch</span>
+                <svg class="btn-arrow-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <line x1="5" y1="12" x2="19" y2="12"></line>
                   <polyline points="12 5 19 12 12 19"></polyline>
                 </svg>
-              </span>
-            </a>
-          </div>
+              </a>
 
-          <!-- Block 2: Editorial Aesthetic Still-Life -->
-          <div class="about-still-life-block" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="still-life-frame">
-              <!-- Serene minimalist still-life matching the reference image's vase, florals, and warm shadow -->
-              <img
-                src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop"
-                alt="Aesthetic ceramic vase and warm sunlight"
-                class="still-life-img"
-                loading="lazy"
-              />
-              <div class="still-life-caption">
-                <span>FOCUS &bull; PRECISION</span>
+              <div class="hero-inline-links">
+                <a href="https://github.com/anusha270425" target="_blank" rel="noopener noreferrer" class="hero-icon-link" aria-label="GitHub Profile">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/anusha-n-58979437a" target="_blank" rel="noopener noreferrer" class="hero-icon-link" aria-label="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
               </div>
             </div>
           </div>
 
-          <!-- Block 3: 2x2 Technical Skills Matrix (Matching Strategy, Design, Dev, Exp in image) -->
-          <div id="skills" class="about-skills-block" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-            <div class="skills-editorial-grid">
-              
-              <!-- 01: Cybersecurity & Networking (Strategy Equivalent) -->
-              <div class="skill-item">
-                <div class="skill-icon-header">
-                  <span class="skill-symbol">✧</span>
-                  <h3 class="skill-title">CYBERSECURITY</h3>
+          <!-- Column 2: Architectural Portrait Composition -->
+          <div class="hero-portrait-col" data-aos="fade-left" data-aos-duration="450">
+            <div class="portrait-stage">
+              <div class="portrait-card">
+                <div class="portrait-frame">
+                  <img
+                    src="./assets/image.jpeg"
+                    alt="Anusha N — Aspiring Security &amp; Software Developer"
+                    class="portrait-photo"
+                    width="400"
+                    height="500"
+                    loading="eager"
+                  />
                 </div>
-                <p class="skill-desc">Linux basics, Kali Linux basics, networking protocols, and secure system architectures.</p>
-              </div>
-
-              <!-- 02: Programming Languages (Design Equivalent) -->
-              <div class="skill-item">
-                <div class="skill-icon-header">
-                  <span class="skill-symbol">○</span>
-                  <h3 class="skill-title">PROGRAMMING</h3>
+                <div class="portrait-caption">
+                  <div class="caption-title">Anusha N</div>
+                  <div class="caption-subtitle">Adhiyamaan College of Engineering</div>
                 </div>
-                <p class="skill-desc">Python, C, and C++ for algorithmic problem solving and low-level computer science logic.</p>
               </div>
-
-              <!-- 03: Web Development (Development Equivalent) -->
-              <div class="skill-item">
-                <div class="skill-icon-header">
-                  <span class="skill-symbol">&lt;/&gt;</span>
-                  <h3 class="skill-title">DEVELOPMENT</h3>
-                </div>
-                <p class="skill-desc">HTML, CSS, and modern JavaScript for building clean, functional, and responsive user experiences.</p>
-              </div>
-
-              <!-- 04: Database & Tools (Experience Equivalent) -->
-              <div class="skill-item">
-                <div class="skill-icon-header">
-                  <span class="skill-symbol">👤</span>
-                  <h3 class="skill-title">DATABASE &amp; TOOLS</h3>
-                </div>
-                <p class="skill-desc">SQL for data querying, alongside Git and GitHub for modern version control workflows.</p>
-              </div>
-
             </div>
           </div>
 
@@ -242,48 +193,169 @@
     </section>
 
     <!-- ====================================================================
-         SECTION 3: EXPERIENCE & EDUCATION (EDITORIAL TIMELINE)
+         SECTION 2: SKILLS MATRIX
          ==================================================================== -->
-    <section id="experience" class="experience-section" aria-labelledby="experience-heading">
-      <div class="editorial-container">
+    <section id="skills" class="section section-bordered" aria-labelledby="skills-heading">
+      <div class="site-container">
         
-        <div class="section-intro-row" data-aos="fade-up" data-aos-duration="600">
-          <p class="section-eyebrow">ACADEMIC &amp; WORK HISTORY +</p>
-          <h2 id="experience-heading" class="section-title">
-            Background &amp; <span class="headline-italic">journey.</span>
-          </h2>
+        <!-- Section Header -->
+        <div class="section-header" data-aos="fade-up" data-aos-duration="450">
+          <div class="section-tag-row">
+            <span class="section-index-badge">01 / Skills</span>
+          </div>
+          <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Core competencies organized across defensive security fundamentals, programming languages, and modern web environments.
+          </p>
         </div>
 
-        <div class="editorial-timeline-grid">
+        <!-- 4-Column Balanced Technical Grid -->
+        <div class="skills-matrix-grid">
           
-          <!-- Item 01: Front-End Internship -->
-          <article class="timeline-entry" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="timeline-meta-bar">
-              <span class="timeline-idx">01 / INTERNSHIP</span>
-              <span class="timeline-date">2 MONTHS</span>
+          <!-- Category 1: Cybersecurity & Networking (Core Focus) -->
+          <article class="matrix-card matrix-card-focus" data-aos="fade-up" data-aos-duration="450" data-aos-delay="40">
+            <div class="matrix-card-header">
+              <span class="matrix-index">01</span>
+              <span class="matrix-focus-badge">Core Focus</span>
             </div>
-            <div class="timeline-body">
-              <h3 class="timeline-role">Front-End Developer Intern</h3>
-              <p class="timeline-company">Synvolve Intellis</p>
-              <p class="timeline-location">Coimbatore, Tamil Nadu | Remote / Online</p>
-            </div>
+            <h3 class="matrix-title">Cybersecurity &amp; Networking</h3>
+            <p class="matrix-summary">
+              Offensive and defensive security foundations, Linux environments, and packet-level networking protocols.
+            </p>
+            <ul class="matrix-tags" aria-label="Cybersecurity and Networking skills">
+              <li class="tech-pill tech-pill-accent">Linux basics</li>
+              <li class="tech-pill tech-pill-accent">Kali Linux basics</li>
+              <li class="tech-pill tech-pill-accent">Networking protocols</li>
+            </ul>
           </article>
 
-          <!-- Item 02: B.E. Degree Education -->
-          <article class="timeline-entry" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-            <div class="timeline-meta-bar">
-              <span class="timeline-idx">02 / EDUCATION</span>
-              <span class="timeline-date">EXPECTED: 2028</span>
+          <!-- Category 2: Programming Languages -->
+          <article class="matrix-card" data-aos="fade-up" data-aos-duration="450" data-aos-delay="80">
+            <div class="matrix-card-header">
+              <span class="matrix-index">02</span>
+              <span class="matrix-type-label">Core Logic</span>
             </div>
-            <div class="timeline-body">
-              <h3 class="timeline-role">Bachelor of Engineering in CSE (Cyber Security)</h3>
-              <p class="timeline-company">Adhiyamaan College of Engineering</p>
-              <p class="timeline-location">Hosur, Tamil Nadu</p>
-              <p class="timeline-desc">
+            <h3 class="matrix-title">Programming Languages</h3>
+            <p class="matrix-summary">
+              Systems programming, object-oriented concepts, and algorithmic problem solving across primary languages.
+            </p>
+            <ul class="matrix-tags" aria-label="Programming Languages skills">
+              <li class="tech-pill">Python</li>
+              <li class="tech-pill">C</li>
+              <li class="tech-pill">C++</li>
+            </ul>
+          </article>
+
+          <!-- Category 3: Web Development -->
+          <article class="matrix-card" data-aos="fade-up" data-aos-duration="450" data-aos-delay="120">
+            <div class="matrix-card-header">
+              <span class="matrix-index">03</span>
+              <span class="matrix-type-label">Frontend</span>
+            </div>
+            <h3 class="matrix-title">Web Development</h3>
+            <p class="matrix-summary">
+              Semantic, accessible, and responsive user interfaces built with modern HTML, CSS Grid/Flexbox, and vanilla JavaScript.
+            </p>
+            <ul class="matrix-tags" aria-label="Web Development skills">
+              <li class="tech-pill">HTML</li>
+              <li class="tech-pill">CSS</li>
+              <li class="tech-pill">JavaScript</li>
+            </ul>
+          </article>
+
+          <!-- Category 4: Database & Tools -->
+          <article class="matrix-card" data-aos="fade-up" data-aos-duration="450" data-aos-delay="160">
+            <div class="matrix-card-header">
+              <span class="matrix-index">04</span>
+              <span class="matrix-type-label">Data &amp; VCS</span>
+            </div>
+            <h3 class="matrix-title">Database &amp; Tools</h3>
+            <p class="matrix-summary">
+              Relational data querying and structured version control workflows for team collaboration.
+            </p>
+            <ul class="matrix-tags" aria-label="Database and Tools skills">
+              <li class="tech-pill">SQL</li>
+              <li class="tech-pill">Git</li>
+              <li class="tech-pill">GitHub</li>
+            </ul>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 3: BACKGROUND (EXPERIENCE & EDUCATION DUAL TRACK)
+         ==================================================================== -->
+    <section id="experience" class="section section-alt section-bordered" aria-labelledby="experience-heading">
+      <div class="site-container">
+        
+        <div class="section-header" data-aos="fade-up" data-aos-duration="450">
+          <div class="section-tag-row">
+            <span class="section-index-badge">02 / Background</span>
+          </div>
+          <h2 id="experience-heading" class="section-title">Experience &amp; Education</h2>
+          <p class="section-subtitle">
+            Formal academic grounding in cybersecurity paired with practical developer internship experience.
+          </p>
+        </div>
+
+        <div class="dual-track-grid">
+          
+          <!-- Track A: Professional Internship -->
+          <div class="track-column" data-aos="fade-up" data-aos-duration="450" data-aos-delay="60">
+            <div class="track-header">
+              <span class="track-eyebrow">Work History</span>
+              <h3 class="track-column-title">Professional Experience</h3>
+            </div>
+
+            <article class="track-card">
+              <div class="track-meta-bar">
+                <span class="pill-badge pill-badge-accent">Internship</span>
+                <span class="track-timeframe">2 Months</span>
+              </div>
+              <h4 class="track-role">Front-End Developer Intern</h4>
+              <p class="track-org">Synvolve Intellis</p>
+              <p class="track-location">
+                <svg class="track-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Coimbatore, Tamil Nadu &bull; Remote / Online</span>
+              </p>
+              <p class="track-details">
+                Focused on modern front-end web development, responsive component design, and collaborative software delivery.
+              </p>
+            </article>
+          </div>
+
+          <!-- Track B: Formal Academics -->
+          <div class="track-column" data-aos="fade-up" data-aos-duration="450" data-aos-delay="100">
+            <div class="track-header">
+              <span class="track-eyebrow">Degree Program</span>
+              <h3 class="track-column-title">Academic Architecture</h3>
+            </div>
+
+            <article class="track-card">
+              <div class="track-meta-bar">
+                <span class="pill-badge pill-badge-neutral">B.E. Degree</span>
+                <span class="track-timeframe">Expected: 2028</span>
+              </div>
+              <h4 class="track-role">Bachelor of Engineering in Computer Science and Engineering (Cyber Security)</h4>
+              <p class="track-org">Adhiyamaan College of Engineering</p>
+              <p class="track-location">
+                <svg class="track-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Hosur, Tamil Nadu</span>
+              </p>
+              <p class="track-details">
                 Focus on secure systems design, network protocols, cybersecurity, and software development.
               </p>
-            </div>
-          </article>
+            </article>
+          </div>
 
         </div>
 
@@ -291,346 +363,371 @@
     </section>
 
     <!-- ====================================================================
-         SECTION 4: SELECTED WORK (EXACT PITCH-BLACK HORIZONTAL BAND IN IMAGE)
+         SECTION 4: PROJECTS (ENGINEERED 2 - 3 - 2 BALANCED GRID)
          ==================================================================== -->
-    <section id="projects" class="selected-work-section" aria-labelledby="work-heading">
-      <div class="editorial-container">
+    <section id="projects" class="section section-bordered" aria-labelledby="projects-heading">
+      <div class="site-container">
         
-        <!-- Header Row -->
-        <div class="work-header-row" data-aos="fade-up" data-aos-duration="600">
-          <div class="work-title-group">
-            <p class="work-eyebrow">+ SELECTED PROJECTS</p>
-            <h2 id="work-heading" class="work-headline">
-              Ideas turned into <span class="headline-italic">impactful experiences.</span>
-            </h2>
+        <div class="section-header" data-aos="fade-up" data-aos-duration="450">
+          <div class="section-tag-row">
+            <span class="section-index-badge">03 / Projects</span>
           </div>
-          <div class="work-header-cta">
-            <a href="https://github.com/anusha270425" target="_blank" rel="noopener noreferrer" class="editorial-btn-dark">
-              <span class="btn-text">VIEW ALL ON GITHUB</span>
-              <span class="btn-arrow-circle" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </span>
-            </a>
-          </div>
+          <h2 id="projects-heading" class="section-title">Selected Projects</h2>
+          <p class="section-subtitle">
+            Live web applications, utilities, and security tools engineered for real-world functionality.
+          </p>
         </div>
 
-        <!-- Horizontal Projects Grid (All 7 live projects, impeccably showcased) -->
-        <div class="work-showcase-grid">
+        <!-- 2 - 3 - 2 Balanced Layout Grid (Zero Orphan Cards) -->
+        <div class="projects-matrix-grid">
           
-          <!-- Project 01: Certificate Manager -->
-          <article class="work-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-            <div class="work-mockup-frame">
-              <div class="mockup-header-dots" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-screen-content">
-                <div class="mockup-placeholder">
-                  <span class="mockup-label">cert.uniaura.dpdns.org</span>
-                  <p class="mockup-tagline">Digital Certificate Organization</p>
-                </div>
-              </div>
+          <!-- Project 01: Certificate Manager (Row 1: 6 Cols) -->
+          <article class="project-item project-span-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="40">
+            <div class="project-header">
+              <span class="project-index">01</span>
+              <span class="project-cat-pill">Security &amp; Web</span>
             </div>
-            <div class="work-card-info">
-              <span class="work-num">01</span>
-              <h3 class="work-name">Certificate Manager</h3>
-              <p class="work-category">Web Application</p>
-              <p class="work-desc">Web application for organizing, managing, and accessing digital certificates.</p>
-              <a href="https://cert.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open live demo of Certificate Manager">
-                <span>Live Demo</span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 02: Random Lot Generator -->
-          <article class="work-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="work-mockup-frame">
-              <div class="mockup-header-dots" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-screen-content">
-                <div class="mockup-placeholder">
-                  <span class="mockup-label">lot-gen.uniaura.dpdns.org</span>
-                  <p class="mockup-tagline">Random Group Divider &amp; Lots</p>
-                </div>
-              </div>
-            </div>
-            <div class="work-card-info">
-              <span class="work-num">02</span>
-              <h3 class="work-name">Random Lot Generator</h3>
-              <p class="work-category">Interactive Utility</p>
-              <p class="work-desc">Interactive utility for randomly generating lots and dividing participants into groups.</p>
-              <a href="https://lot-gen.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open live demo of Random Lot Generator">
-                <span>Live Demo</span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 03: File Re-namer -->
-          <article class="work-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
-            <div class="work-mockup-frame">
-              <div class="mockup-header-dots" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-screen-content">
-                <div class="mockup-placeholder">
-                  <span class="mockup-label">file-re-namer.vercel.app</span>
-                  <p class="mockup-tagline">Batch File Organizer</p>
-                </div>
-              </div>
-            </div>
-            <div class="work-card-info">
-              <span class="work-num">03</span>
-              <h3 class="work-name">File Re-namer</h3>
-              <p class="work-category">Productivity Tool</p>
-              <p class="work-desc">Browser-based tool for batch renaming and organizing files efficiently.</p>
-              <a href="https://file-re-namer.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open live demo of File Re-namer">
-                <span>Live Demo</span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 04: Zip Link -->
-          <article class="work-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="50">
-            <div class="work-mockup-frame">
-              <div class="mockup-header-dots" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-screen-content">
-                <div class="mockup-placeholder">
-                  <span class="mockup-label">zip-link-five.vercel.app</span>
-                  <p class="mockup-tagline">Compression &amp; Link Utility</p>
-                </div>
-              </div>
-            </div>
-            <div class="work-card-info">
-              <span class="work-num">04</span>
-              <h3 class="work-name">Zip Link</h3>
-              <p class="work-category">Compression Tool</p>
-              <p class="work-desc">File compression utility that packages files and generates shareable links.</p>
-              <a href="https://zip-link-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open live demo of Zip Link">
-                <span>Live Demo</span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 05: Expense Tracker -->
-          <article class="work-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
-            <div class="work-mockup-frame">
-              <div class="mockup-header-dots" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-screen-content">
-                <div class="mockup-placeholder">
-                  <span class="mockup-label">expense-dnzg.vercel.app</span>
-                  <p class="mockup-tagline">Personal Finance Tracker</p>
-                </div>
-              </div>
-            </div>
-            <div class="work-card-info">
-              <span class="work-num">05</span>
-              <h3 class="work-name">Expense Tracker</h3>
-              <p class="work-category">Finance Dashboard</p>
-              <p class="work-desc">Personal finance tracker for logging, categorizing, and monitoring daily expenses.</p>
-              <a href="https://expense-dnzg.vercel.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open live demo of Expense Tracker">
-                <span>Live Demo</span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 06: Password Vault -->
-          <article class="work-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
-            <div class="work-mockup-frame">
-              <div class="mockup-header-dots" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-screen-content">
-                <div class="mockup-placeholder">
-                  <span class="mockup-label">pasvault.netlify.app</span>
-                  <p class="mockup-tagline">Encrypted Credential Vault</p>
-                </div>
-              </div>
-            </div>
-            <div class="work-card-info">
-              <span class="work-num">06</span>
-              <h3 class="work-name">Password Vault</h3>
-              <p class="work-category">Security &amp; Auth</p>
-              <p class="work-desc">Secure credential management application for storing and organizing passwords.</p>
-              <a href="https://pasvault.netlify.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open live demo of Password Vault">
-                <span>Live Demo</span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-          <!-- Project 07: Todo Mission -->
-          <article class="work-card" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
-            <div class="work-mockup-frame">
-              <div class="mockup-header-dots" aria-hidden="true">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="mockup-screen-content">
-                <div class="mockup-placeholder">
-                  <span class="mockup-label">todomission.netlify.app</span>
-                  <p class="mockup-tagline">Mission &amp; Priority App</p>
-                </div>
-              </div>
-            </div>
-            <div class="work-card-info">
-              <span class="work-num">07</span>
-              <h3 class="work-name">Todo Mission</h3>
-              <p class="work-category">Task Management</p>
-              <p class="work-desc">Task and mission management web app for tracking daily goals and priorities.</p>
-              <a href="https://todomission.netlify.app/" target="_blank" rel="noopener noreferrer" class="work-link" aria-label="Open live demo of Todo Mission">
-                <span>Live Demo</span>
-                <span class="link-arrow" aria-hidden="true">→</span>
-              </a>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ====================================================================
-         SECTION 5: CREDENTIALS & CERTIFICATIONS (EXACT LOGO BAR ROW IN IMAGE)
-         ==================================================================== -->
-    <section id="certifications" class="certifications-bar-section" aria-labelledby="certs-heading">
-      <div class="editorial-container">
-        <div class="certs-bar-layout" data-aos="fade-up" data-aos-duration="600">
-          
-          <!-- Quote Statement (Matching the client testimonial on left) -->
-          <div class="certs-quote-col">
-            <span class="quote-mark">“</span>
-            <p class="quote-text">
-              Focused on cybersecurity fundamentals, networking protocols, and building clean, responsive applications with disciplined engineering.
+            <h3 class="project-name">Certificate Manager</h3>
+            <p class="project-desc">
+              Web application for organizing, managing, and accessing digital certificates.
             </p>
-            <span class="quote-author">— ANUSHA N, B.E. CSE (CYBER SECURITY)</span>
-          </div>
+            <div class="project-footer">
+              <span class="project-host-tag">cert.uniaura.dpdns.org</span>
+              <a href="https://cert.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Certificate Manager">
+                <span>Live Demo</span>
+                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
 
-          <!-- Credential Partner Marks (Matching Nexora, Squarelabs, Dapper, etc.) -->
-          <div class="certs-logos-col">
-            <div class="cert-partner-mark">
-              <span class="partner-name">CISCO</span>
-              <span class="partner-cert">Introduction to Cybersecurity</span>
+          <!-- Project 02: Random Lot Generator (Row 1: 6 Cols) -->
+          <article class="project-item project-span-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="80">
+            <div class="project-header">
+              <span class="project-index">02</span>
+              <span class="project-cat-pill">Interactive Utility</span>
             </div>
-            <div class="cert-partner-mark">
-              <span class="partner-name">INFOSYS</span>
-              <span class="partner-cert">Network Fundamentals</span>
+            <h3 class="project-name">Random Lot Generator</h3>
+            <p class="project-desc">
+              Interactive utility for randomly generating lots and dividing participants into groups.
+            </p>
+            <div class="project-footer">
+              <span class="project-host-tag">lot-gen.uniaura.dpdns.org</span>
+              <a href="https://lot-gen.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Random Lot Generator">
+                <span>Live Demo</span>
+                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
             </div>
-            <div class="cert-partner-mark">
-              <span class="partner-name">CISCO</span>
-              <span class="partner-cert">Exploring Networking</span>
+          </article>
+
+          <!-- Project 03: File Re-namer (Row 2: 4 Cols) -->
+          <article class="project-item project-span-4" data-aos="fade-up" data-aos-duration="450" data-aos-delay="40">
+            <div class="project-header">
+              <span class="project-index">03</span>
+              <span class="project-cat-pill">File Management</span>
             </div>
-          </div>
+            <h3 class="project-name">File Re-namer</h3>
+            <p class="project-desc">
+              Browser-based tool for batch renaming and organizing files efficiently.
+            </p>
+            <div class="project-footer">
+              <span class="project-host-tag">file-re-namer.vercel.app</span>
+              <a href="https://file-re-namer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of File Re-namer">
+                <span>Live Demo</span>
+                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 04: Zip Link (Row 2: 4 Cols) -->
+          <article class="project-item project-span-4" data-aos="fade-up" data-aos-duration="450" data-aos-delay="80">
+            <div class="project-header">
+              <span class="project-index">04</span>
+              <span class="project-cat-pill">Compression</span>
+            </div>
+            <h3 class="project-name">Zip Link</h3>
+            <p class="project-desc">
+              File compression utility that packages files and generates shareable links.
+            </p>
+            <div class="project-footer">
+              <span class="project-host-tag">zip-link-five.vercel.app</span>
+              <a href="https://zip-link-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Zip Link">
+                <span>Live Demo</span>
+                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 05: Expense Tracker (Row 2: 4 Cols) -->
+          <article class="project-item project-span-4" data-aos="fade-up" data-aos-duration="450" data-aos-delay="120">
+            <div class="project-header">
+              <span class="project-index">05</span>
+              <span class="project-cat-pill">Personal Finance</span>
+            </div>
+            <h3 class="project-name">Expense Tracker</h3>
+            <p class="project-desc">
+              Personal finance tracker for logging, categorizing, and monitoring daily expenses.
+            </p>
+            <div class="project-footer">
+              <span class="project-host-tag">expense-dnzg.vercel.app</span>
+              <a href="https://expense-dnzg.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Expense Tracker">
+                <span>Live Demo</span>
+                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 06: Password Vault (Row 3: 6 Cols) -->
+          <article class="project-item project-span-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="40">
+            <div class="project-header">
+              <span class="project-index">06</span>
+              <span class="project-cat-pill">Security &amp; Auth</span>
+            </div>
+            <h3 class="project-name">Password Vault</h3>
+            <p class="project-desc">
+              Secure credential management application for storing and organizing passwords.
+            </p>
+            <div class="project-footer">
+              <span class="project-host-tag">pasvault.netlify.app</span>
+              <a href="https://pasvault.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Password Vault">
+                <span>Live Demo</span>
+                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 07: Todo Mission (Row 3: 6 Cols) -->
+          <article class="project-item project-span-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="80">
+            <div class="project-header">
+              <span class="project-index">07</span>
+              <span class="project-cat-pill">Productivity</span>
+            </div>
+            <h3 class="project-name">Todo Mission</h3>
+            <p class="project-desc">
+              Task and mission management web app for tracking daily goals and priorities.
+            </p>
+            <div class="project-footer">
+              <span class="project-host-tag">todomission.netlify.app</span>
+              <a href="https://todomission.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Todo Mission">
+                <span>Live Demo</span>
+                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
 
         </div>
+
       </div>
     </section>
 
     <!-- ====================================================================
-         SECTION 6: CONTACT & FOOTER (EXACT BOTTOM COMPOSITION IN IMAGE)
+         SECTION 5: CERTIFICATIONS MATRIX
          ==================================================================== -->
-    <section id="contact" class="contact-cta-section" aria-labelledby="contact-heading">
-      <div class="editorial-container">
-        <div class="contact-cta-grid">
-          
-          <!-- Left: Warm Editorial Still Life (Desk, books, coffee mug, lamp) -->
-          <div class="contact-still-life-col" data-aos="fade-right" data-aos-duration="700">
-            <div class="contact-image-frame">
-              <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=800&auto=format&fit=crop"
-                alt="Architectural desk with warm light and clean journals"
-                class="contact-still-life-img"
-                loading="lazy"
-              />
-            </div>
+    <section id="certifications" class="section section-alt section-bordered" aria-labelledby="certifications-heading">
+      <div class="site-container">
+        
+        <div class="section-header" data-aos="fade-up" data-aos-duration="450">
+          <div class="section-tag-row">
+            <span class="section-index-badge">04 / Certifications</span>
           </div>
+          <h2 id="certifications-heading" class="section-title">Certifications</h2>
+          <p class="section-subtitle">
+            Verified industry coursework in cybersecurity architectures and network principles.
+          </p>
+        </div>
 
-          <!-- Right: Contact Headline, Connect Button & Social Stack -->
-          <div class="contact-content-col" data-aos="fade-left" data-aos-duration="700">
+        <div class="credentials-matrix-grid">
+          
+          <!-- Cert 1 -->
+          <article class="credential-card" data-aos="fade-up" data-aos-duration="450" data-aos-delay="40">
+            <div class="credential-top">
+              <div class="credential-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <span class="credential-status">Verified</span>
+            </div>
+            <h3 class="credential-title">Introduction to Cybersecurity</h3>
+            <p class="credential-issuer">Cisco Networking Academy</p>
+          </article>
+
+          <!-- Cert 2 -->
+          <article class="credential-card" data-aos="fade-up" data-aos-duration="450" data-aos-delay="80">
+            <div class="credential-top">
+              <div class="credential-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <span class="credential-status">Verified</span>
+            </div>
+            <h3 class="credential-title">Network Fundamentals</h3>
+            <p class="credential-issuer">Infosys Springboard</p>
+          </article>
+
+          <!-- Cert 3 -->
+          <article class="credential-card" data-aos="fade-up" data-aos-duration="450" data-aos-delay="120">
+            <div class="credential-top">
+              <div class="credential-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <span class="credential-status">Verified</span>
+            </div>
+            <h3 class="credential-title">Exploring Networking with Cisco</h3>
+            <p class="credential-issuer">Cisco Networking Academy</p>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         SECTION 6: CONNECT (COLLABORATION CONSOLE)
+         ==================================================================== -->
+    <section id="contact" class="section section-bordered" aria-labelledby="contact-heading">
+      <div class="site-container">
+        
+        <div class="contact-console-card" data-aos="fade-up" data-aos-duration="450">
+          <div class="contact-console-grid">
             
-            <div class="contact-main-text">
-              <h2 id="contact-heading" class="contact-headline">
-                Let's create something <span class="headline-italic">extraordinary together.</span>
-              </h2>
-
-              <p class="contact-subtext">
+            <!-- Left Info Block -->
+            <div class="contact-info-block">
+              <div class="section-tag-row">
+                <span class="section-index-badge">05 / Connect</span>
+              </div>
+              <h2 id="contact-heading" class="contact-title">Let's Connect &amp; Collaborate</h2>
+              <p class="contact-lead-text">
                 Interested in collaborating, internship opportunities, or discussing cybersecurity and software development? Reach out directly via email or connect on LinkedIn and GitHub.
               </p>
 
-              <!-- Connect Button with Circled Arrow -->
-              <div class="contact-action-wrapper">
-                <button class="editorial-btn copy-email-btn" type="button" data-email="anusha21narasimman@gmail.com" aria-label="Copy email address anusha21narasimman@gmail.com">
-                  <span class="btn-text">LET'S CONNECT</span>
-                  <span class="btn-arrow-circle" aria-hidden="true">
-                    <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
+              <!-- Direct Copy Email Module -->
+              <div class="contact-direct-box">
+                <div class="contact-box-label">Direct Communication Channel</div>
+                <div class="contact-email-row">
+                  <span class="contact-email-address">anusha21narasimman@gmail.com</span>
+                  <div class="contact-button-row">
+                    <button class="btn btn-sm btn-primary copy-email-btn" type="button" data-email="anusha21narasimman@gmail.com" aria-label="Copy email anusha21narasimman@gmail.com">
+                      <svg class="btn-icon copy-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                        <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                      </svg>
+                      <svg class="btn-icon check-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
+                        <polyline points="20 6 9 17 4 12"></polyline>
+                      </svg>
+                      <span class="btn-text">Copy</span>
+                    </button>
+                    <a href="mailto:anusha21narasimman@gmail.com" class="btn btn-sm btn-secondary" aria-label="Send email to anusha21narasimman@gmail.com">
+                      <svg class="btn-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                      </svg>
+                      <span>Open Mail</span>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Toast feedback when email is copied inside contact section -->
+                <div id="copy-notification" class="notification-toast" role="status" aria-live="polite" aria-atomic="true" hidden>
+                  Email address copied to clipboard!
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Network Links Stack -->
+            <div class="contact-networks-block">
+              <div class="network-group-label">Verified External Profiles</div>
+              
+              <div class="network-cards-stack">
+                <a href="https://github.com/anusha270425" target="_blank" rel="noopener noreferrer" class="network-link-item">
+                  <div class="network-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
                     </svg>
-                    <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" hidden>
-                      <polyline points="20 6 9 17 4 12"></polyline>
+                  </div>
+                  <div class="network-info">
+                    <span class="network-channel">Code Repository</span>
+                    <span class="network-handle">github.com/anusha270425</span>
+                  </div>
+                  <svg class="network-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+
+                <a href="https://linkedin.com/in/anusha-n-58979437a" target="_blank" rel="noopener noreferrer" class="network-link-item">
+                  <div class="network-icon-box" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                     </svg>
-                  </span>
-                </button>
-                <a href="mailto:anusha21narasimman@gmail.com" class="direct-mail-link" aria-label="Open mail client to write to anusha21narasimman@gmail.com">
-                  anusha21narasimman@gmail.com
+                  </div>
+                  <div class="network-info">
+                    <span class="network-channel">Professional Network</span>
+                    <span class="network-handle">linkedin.com/in/anusha-n-58979437a</span>
+                  </div>
+                  <svg class="network-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
                 </a>
               </div>
             </div>
 
-            <!-- Social Links Stack on Far Right (Matching GITHUB •, LINKEDIN •, etc.) -->
-            <div class="contact-social-stack">
-              <a href="https://github.com/anusha270425" target="_blank" rel="noopener noreferrer" class="social-link-item">
-                <span>GITHUB</span>
-                <span class="bullet-dot">•</span>
-              </a>
-              <a href="https://linkedin.com/in/anusha-n-58979437a" target="_blank" rel="noopener noreferrer" class="social-link-item">
-                <span>LINKEDIN</span>
-                <span class="bullet-dot">•</span>
-              </a>
-              <a href="mailto:anusha21narasimman@gmail.com" class="social-link-item">
-                <span>EMAIL</span>
-                <span class="bullet-dot">•</span>
-              </a>
-              <a href="tel:+919360244754" class="social-link-item">
-                <span>PHONE</span>
-                <span class="bullet-dot">•</span>
-              </a>
-            </div>
-
-          </div>
-
-        </div>
-
-        <!-- Sub-Footer Line -->
-        <div class="sub-footer-bar">
-          <div class="sub-footer-left">
-            <p>&copy; <span id="year">2026</span> Anusha N. All rights reserved.</p>
-          </div>
-          <div class="sub-footer-right">
-            <p>B.E. CSE (Cyber Security) &bull; Adhiyamaan College of Engineering &bull; Hosur, Tamil Nadu</p>
           </div>
         </div>
 
       </div>
     </section>
-    <!-- Floating Clipboard Notification Toast (Zero Layout Shift) -->
-    <div id="copy-notification" class="notification-toast" role="status" aria-live="polite" aria-atomic="true">
-      <svg class="toast-check-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="20 6 9 17 4 12"></polyline>
-      </svg>
-      <span class="toast-text">Email copied to clipboard</span>
-    </div>
   </main>
+
+  <!-- Minimalist Executive Footer -->
+  <footer class="site-footer">
+    <div class="site-container footer-inner">
+      <div class="footer-left">
+        <p>&copy; <span id="year">2026</span> Anusha N. All rights reserved.</p>
+        <p class="footer-subtext">B.E. CSE (Cyber Security) &bull; Adhiyamaan College of Engineering</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul class="footer-nav-links">
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#experience" class="footer-link">Background</a></li>
+          <li><a href="#projects" class="footer-link">Projects</a></li>
+          <li><a href="#certifications" class="footer-link">Certifications</a></li>
+          <li><a href="#contact" class="footer-link">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
   <!-- AOS (Animate On Scroll) JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
