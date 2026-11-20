@@ -222,13 +222,16 @@
 
   if (typeof Lenis !== 'undefined' && !prefersReducedMotion) {
     try {
+      // Balanced cubic ease-in-out: smooth departure, fluid medium cruise, gentle arrival
+      const smoothEasing = function (t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      };
+
       lenisInstance = new Lenis({
         duration: 0.4,
-        easing: function (t) {
-          return Math.min(1, 1.001 - Math.pow(2, -10 * t));
-        },
+        easing: smoothEasing,
         smoothWheel: true,
-        touchMultiplier: 1.2
+        touchMultiplier: 1.0
       });
 
       function raf(time) {
@@ -251,9 +254,7 @@
               lenisInstance.scrollTo(targetElement, {
                 offset: -68,
                 duration: 0.4,
-                easing: function (t) {
-                  return Math.min(1, 1.001 - Math.pow(2, -10 * t));
-                }
+                easing: smoothEasing
               });
             }
           }
