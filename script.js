@@ -1,12 +1,12 @@
 /**
- * Portfolio Interaction Script - Anusha N
+ * Editorial Luxury Portfolio Interaction Script - Anusha N
  * Enhanced with:
  * 1. Mobile navigation toggle & keyboard accessibility
- * 2. Copy-to-clipboard for email with polite feedback toast
- * 3. Theme Toggle (Light / Dark)
- * 4. Active navigation link scroll spy (animated underline sync)
- * 5. Library 1 of 2: AOS (Animate On Scroll) initialization with stagger & reduced-motion checks
- * 6. Library 2 of 2: Lenis smooth momentum scrolling with anchor navigation integration
+ * 2. Copy-to-clipboard for email with polite floating feedback toast (zero layout shift)
+ * 3. Theme Toggle (Warm Ivory Light / Pitch Midnight Dark)
+ * 4. Active navigation link scroll spy (animated underline & active dot sync)
+ * 5. Library 1 of 2: AOS (Animate On Scroll) initialization with medium-smooth 380ms choreography
+ * 6. Library 2 of 2: Lenis smooth momentum scrolling with anchor navigation integration (0.42s)
  * 7. Dynamic copyright year
  */
 
@@ -65,7 +65,7 @@
   }
 
   // --------------------------------------------------------------------------
-  // 2. Copy-to-Clipboard for Email
+  // 2. Copy-to-Clipboard for Email (Zero Layout Shift + Floating Toast)
   // --------------------------------------------------------------------------
   const copyButtons = document.querySelectorAll('.copy-email-btn');
   const notificationToast = document.getElementById('copy-notification');
@@ -74,18 +74,22 @@
   function showNotification(message) {
     if (!notificationToast) return;
 
-    if (message) {
+    const textSpan = notificationToast.querySelector('.toast-text');
+    if (textSpan && message) {
+      textSpan.textContent = message;
+    } else if (message) {
       notificationToast.textContent = message;
     }
-    notificationToast.hidden = false;
+
+    notificationToast.classList.add('is-visible');
 
     if (notificationTimer) {
       clearTimeout(notificationTimer);
     }
 
     notificationTimer = setTimeout(function () {
-      notificationToast.hidden = true;
-    }, 2500);
+      notificationToast.classList.remove('is-visible');
+    }, 2400);
   }
 
   copyButtons.forEach(function (btn) {
@@ -94,7 +98,7 @@
       const btnText = btn.querySelector('.btn-text');
       const copyIcon = btn.querySelector('.copy-icon');
       const checkIcon = btn.querySelector('.check-icon');
-      const originalText = btnText ? btnText.textContent : 'Copy Email';
+      const originalText = btnText ? btnText.textContent : "Let's Connect";
 
       function setCopiedState() {
         if (btnText) btnText.textContent = 'Copied!';
@@ -129,32 +133,31 @@
       textArea.value = text;
       textArea.style.position = 'fixed';
       textArea.style.left = '-9999px';
-      textArea.style.top = '0';
+      textArea.style.top = '-9999px';
+      textArea.setAttribute('aria-hidden', 'true');
       document.body.appendChild(textArea);
-      textArea.focus();
       textArea.select();
       const successful = document.execCommand('copy');
       document.body.removeChild(textArea);
-      if (successful && onSuccess) {
+      if (successful && typeof onSuccess === 'function') {
         onSuccess();
       }
     } catch (err) {
-      console.error('Fallback copy failed: ', err);
+      console.warn('Fallback copy failed:', err);
     }
   }
 
   // --------------------------------------------------------------------------
-  // 3. Theme Toggle (Light / Dark)
+  // 3. Theme Toggle (Warm Ivory Light / Midnight Dark)
   // --------------------------------------------------------------------------
   const themeToggle = document.getElementById('theme-toggle');
+  const STORAGE_KEY = 'portfolio_editorial_theme';
 
   if (themeToggle) {
-    const STORAGE_KEY = 'anusha-portfolio-theme';
-    const storedTheme = localStorage.getItem(STORAGE_KEY);
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem(STORAGE_KEY);
+    const systemPrefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const currentTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
 
-    // Set initial theme (Default to beautiful futuristic light theme)
-    const currentTheme = storedTheme || 'light';
     if (currentTheme === 'dark') {
       document.documentElement.setAttribute('data-theme', 'dark');
       themeToggle.setAttribute('aria-label', 'Switch to light theme');
@@ -183,22 +186,24 @@
   }
 
   // --------------------------------------------------------------------------
-  // 4. Active Navigation Link Scroll Spy (Animated Underline Sync)
+  // 4. Active Navigation Link Scroll Spy (Dot & Underline Indicator)
   // --------------------------------------------------------------------------
-  const sections = document.querySelectorAll('section[id]');
+  const trackedSectionIds = ['hero', 'about', 'skills', 'experience', 'projects', 'certifications', 'contact'];
   const desktopNavLinks = document.querySelectorAll('.desktop-nav .nav-link');
   const mobileNavLinks = document.querySelectorAll('.mobile-nav .mobile-nav-link');
 
   function updateActiveNav() {
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    const headerHeight = 90;
+    const headerHeight = 80;
 
-    sections.forEach(function (section) {
+    trackedSectionIds.forEach(function (sectionId) {
+      const section = document.getElementById(sectionId);
+      if (!section) return;
+
       const sectionTop = section.offsetTop - headerHeight;
       const sectionHeight = section.offsetHeight;
-      const sectionId = section.getAttribute('id');
 
-      if (scrollPosition >= sectionTop - 60 && scrollPosition < sectionTop + sectionHeight - 60) {
+      if (scrollPosition >= sectionTop - 50 && scrollPosition < sectionTop + sectionHeight - 50) {
         desktopNavLinks.forEach(function (link) {
           if (link.getAttribute('href') === '#' + sectionId) {
             link.classList.add('active');
@@ -222,14 +227,14 @@
   updateActiveNav();
 
   // --------------------------------------------------------------------------
-  // 5. Library 1 of 2: AOS (Animate On Scroll) Initialization
+  // 5. Library 1 of 2: AOS (Animate On Scroll) Initialization (380ms)
   // --------------------------------------------------------------------------
   if (typeof AOS !== 'undefined') {
     AOS.init({
-      duration: 400,
+      duration: 380,
       easing: 'ease-out-cubic',
       once: true,
-      offset: 40,
+      offset: 30,
       disable: function () {
         return prefersReducedMotion;
       }
@@ -237,19 +242,19 @@
   }
 
   // --------------------------------------------------------------------------
-  // 6. Library 2 of 2: Lenis Smooth Momentum Scrolling (Medium & Responsive)
+  // 6. Library 2 of 2: Lenis Smooth Momentum Scrolling (0.42s Medium-Smooth)
   // --------------------------------------------------------------------------
   let lenisInstance = null;
 
   if (typeof Lenis !== 'undefined' && !prefersReducedMotion) {
     try {
       lenisInstance = new Lenis({
-        duration: 0.55,
+        duration: 0.42,
         easing: function (t) {
-          return Math.min(1, 1.001 - Math.pow(2, -10 * t));
+          return 1 - Math.pow(1 - t, 3);
         },
         smoothWheel: true,
-        touchMultiplier: 1.2
+        touchMultiplier: 1.15
       });
 
       function raf(time) {
@@ -270,8 +275,11 @@
             if (targetElement) {
               e.preventDefault();
               lenisInstance.scrollTo(targetElement, {
-                offset: -68,
-                duration: 0.5
+                offset: -70,
+                duration: 0.42,
+                easing: function (t) {
+                  return 1 - Math.pow(1 - t, 3);
+                }
               });
             }
           }
