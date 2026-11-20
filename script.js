@@ -205,10 +205,10 @@
   // --------------------------------------------------------------------------
   if (typeof AOS !== 'undefined') {
     AOS.init({
-      duration: 400,
+      duration: 420,
       easing: 'ease-out-cubic',
       once: true,
-      offset: 40,
+      offset: 35,
       disable: function () {
         return prefersReducedMotion;
       }
@@ -241,6 +241,9 @@
         }
       }
       requestAnimationFrame(raf);
+
+      // Sync active navigation link scroll spy with Lenis RAF loop
+      lenisInstance.on('scroll', updateActiveNav);
 
       // Connect anchor links for smooth scrolling with header offset (~400ms duration)
       const anchorLinks = document.querySelectorAll('a[href^="#"]');
