@@ -2,7 +2,7 @@
  * Portfolio Interaction Script - Anusha N
  * Enhanced with:
  * 1. Mobile navigation toggle & keyboard accessibility
- * 2. Copy-to-clipboard for email with polite feedback toast
+ * 2. In-button copy-to-clipboard for email
  * 3. Theme Toggle (Light / Dark)
  * 4. Active navigation link scroll spy (animated underline sync)
  * 5. Library 1 of 2: AOS (Animate On Scroll) initialization with stagger & reduced-motion checks
@@ -68,25 +68,6 @@
   // 2. Copy-to-Clipboard for Email
   // --------------------------------------------------------------------------
   const copyButtons = document.querySelectorAll('.copy-email-btn');
-  const notificationToast = document.getElementById('copy-notification');
-  let notificationTimer = null;
-
-  function showNotification(message) {
-    if (!notificationToast) return;
-
-    if (message) {
-      notificationToast.textContent = message;
-    }
-    notificationToast.hidden = false;
-
-    if (notificationTimer) {
-      clearTimeout(notificationTimer);
-    }
-
-    notificationTimer = setTimeout(function () {
-      notificationToast.hidden = true;
-    }, 2500);
-  }
 
   copyButtons.forEach(function (btn) {
     btn.addEventListener('click', function () {
@@ -101,8 +82,6 @@
         if (copyIcon) copyIcon.hidden = true;
         if (checkIcon) checkIcon.hidden = false;
         btn.setAttribute('aria-label', 'Email copied to clipboard');
-
-        showNotification('Email copied to clipboard: ' + emailToCopy);
 
         setTimeout(function () {
           if (btnText) btnText.textContent = originalText;
@@ -237,14 +216,14 @@
   }
 
   // --------------------------------------------------------------------------
-  // 6. Library 2 of 2: Lenis Smooth Momentum Scrolling (Medium & Responsive)
+  // 6. Library 2 of 2: Lenis Smooth Momentum Scrolling (~400ms Medium-Paced Fluid Transition)
   // --------------------------------------------------------------------------
   let lenisInstance = null;
 
   if (typeof Lenis !== 'undefined' && !prefersReducedMotion) {
     try {
       lenisInstance = new Lenis({
-        duration: 0.55,
+        duration: 0.4,
         easing: function (t) {
           return Math.min(1, 1.001 - Math.pow(2, -10 * t));
         },
@@ -260,7 +239,7 @@
       }
       requestAnimationFrame(raf);
 
-      // Connect anchor links for smooth scrolling with header offset
+      // Connect anchor links for smooth scrolling with header offset (~400ms duration)
       const anchorLinks = document.querySelectorAll('a[href^="#"]');
       anchorLinks.forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
@@ -271,7 +250,10 @@
               e.preventDefault();
               lenisInstance.scrollTo(targetElement, {
                 offset: -68,
-                duration: 0.5
+                duration: 0.4,
+                easing: function (t) {
+                  return Math.min(1, 1.001 - Math.pow(2, -10 * t));
+                }
               });
             }
           }
