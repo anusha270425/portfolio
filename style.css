@@ -172,11 +172,70 @@ html.lenis body {
   }
 }
 
-/* GPU rasterization hint for AOS scroll targets */
+/* GPU rasterization hint & Professional Motion Refinements */
 [data-aos] {
+  pointer-events: auto;
   will-change: transform, opacity;
   backface-visibility: hidden;
   transform: translateZ(0);
+}
+
+/* Subtle, refined vertical movement (20px instead of default 100px) */
+[data-aos="fade-up"] {
+  transform: translate3d(0, 20px, 0) scale(0.99);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}
+
+[data-aos="fade-down"] {
+  transform: translate3d(0, -18px, 0) scale(0.99);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-down"].aos-animate {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}
+
+/* Subtle, refined horizontal movement (20px instead of default 100px) */
+[data-aos="fade-left"] {
+  transform: translate3d(20px, 0, 0) scale(0.99);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-left"].aos-animate {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}
+
+[data-aos="fade-right"] {
+  transform: translate3d(-20px, 0, 0) scale(0.99);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="fade-right"].aos-animate {
+  transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}
+
+/* Distinctive Subtle Scale & Micro-Elevation Variant */
+[data-aos="subtle-scale"] {
+  transform: scale(0.97) translate3d(0, 14px, 0);
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+
+[data-aos="subtle-scale"].aos-animate {
+  transform: scale(1) translate3d(0, 0, 0);
+  opacity: 1;
 }
 
 body.site-body {
@@ -1631,7 +1690,12 @@ ol {
     scroll-behavior: auto !important;
   }
 
-  [data-aos] {
+  [data-aos],
+  [data-aos="fade-up"],
+  [data-aos="fade-down"],
+  [data-aos="fade-left"],
+  [data-aos="fade-right"],
+  [data-aos="subtle-scale"] {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;

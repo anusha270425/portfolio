@@ -205,10 +205,10 @@
   // --------------------------------------------------------------------------
   if (typeof AOS !== 'undefined') {
     AOS.init({
-      duration: 420,
+      duration: 450,
       easing: 'ease-out-cubic',
       once: true,
-      offset: 35,
+      offset: 30,
       disable: function () {
         return prefersReducedMotion;
       }
@@ -216,7 +216,7 @@
   }
 
   // --------------------------------------------------------------------------
-  // 6. Library 2 of 2: Lenis Smooth Momentum Scrolling (~400ms Medium-Paced Fluid Transition)
+  // 6. Library 2 of 2: Lenis Smooth Momentum Scrolling (~450ms Medium-Paced Fluid Transition)
   // --------------------------------------------------------------------------
   let lenisInstance = null;
 
@@ -228,7 +228,7 @@
       };
 
       lenisInstance = new Lenis({
-        duration: 0.4,
+        duration: 0.45,
         easing: smoothEasing,
         smoothWheel: true,
         touchMultiplier: 1.0
@@ -245,7 +245,7 @@
       // Sync active navigation link scroll spy with Lenis RAF loop
       lenisInstance.on('scroll', updateActiveNav);
 
-      // Connect anchor links for smooth scrolling with header offset (~400ms duration)
+      // Connect anchor links for smooth scrolling with header offset (~450ms duration)
       const anchorLinks = document.querySelectorAll('a[href^="#"]');
       anchorLinks.forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
@@ -256,7 +256,7 @@
               e.preventDefault();
               lenisInstance.scrollTo(targetElement, {
                 offset: -68,
-                duration: 0.4,
+                duration: 0.45,
                 easing: smoothEasing
               });
             }
