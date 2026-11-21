@@ -275,4 +275,147 @@
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
+
+  // --------------------------------------------------------------------------
+  // 8. Certifications Filtering & Preview Lightbox Modal
+  // --------------------------------------------------------------------------
+  const certFilterBtns = document.querySelectorAll('.cert-filter-btn');
+  const certCards = document.querySelectorAll('.credential-card[data-category]');
+  const certModal = document.getElementById('cert-preview-modal');
+  let lastActiveTrigger = null;
+
+  if (certFilterBtns.length && certCards.length) {
+    certFilterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const filter = this.getAttribute('data-filter');
+
+        // Update active tab states
+        certFilterBtns.forEach(function (b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        this.classList.add('active');
+        this.setAttribute('aria-selected', 'true');
+
+        // Filter cards with smooth opacity and display toggle
+        certCards.forEach(function (card) {
+          const cardCat = card.getAttribute('data-category');
+          if (filter === 'all' || cardCat === filter) {
+            card.style.display = 'flex';
+            setTimeout(function () {
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, 20);
+          } else {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(8px)';
+            setTimeout(function () {
+              if (card.style.opacity === '0') {
+                card.style.display = 'none';
+              }
+            }, 180);
+          }
+        });
+
+        if (typeof AOS !== 'undefined') {
+          AOS.refresh();
+        }
+      });
+    });
+  }
+
+  if (certModal) {
+    const modalImg = document.getElementById('cert-modal-img');
+    const modalTitle = document.getElementById('cert-modal-title');
+    const modalIssuer = document.getElementById('cert-modal-issuer');
+    const modalMeta = document.getElementById('cert-modal-meta');
+    const modalCategory = document.getElementById('cert-modal-category');
+    const modalStatus = document.getElementById('cert-modal-status');
+    const modalPdfLink = document.getElementById('cert-modal-pdf-link');
+    const closeBtns = certModal.querySelectorAll('.cert-modal-close-btn, .cert-modal-dismiss-btn, .cert-modal-backdrop');
+
+    function openModal(data) {
+      if (modalImg) modalImg.src = data.img;
+      if (modalTitle) modalTitle.textContent = data.title;
+      if (modalIssuer) modalIssuer.textContent = data.issuer;
+      if (modalMeta) modalMeta.textContent = data.meta;
+      if (modalCategory) modalCategory.textContent = data.category;
+      if (modalStatus) {
+        modalStatus.textContent = data.badge;
+        if (data.badge && data.badge.includes('Elite')) {
+          modalStatus.classList.add('credential-status-elite');
+        } else {
+          modalStatus.classList.remove('credential-status-elite');
+        }
+      }
+      if (modalPdfLink) {
+        modalPdfLink.href = data.pdf;
+        modalPdfLink.setAttribute('aria-label', 'Open ' + data.title + ' Official PDF in new tab');
+      }
+
+      certModal.classList.add('active');
+      certModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+
+      const firstClose = certModal.querySelector('.cert-modal-close-btn');
+      if (firstClose) firstClose.focus();
+    }
+
+    function closeModal() {
+      certModal.classList.remove('active');
+      certModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastActiveTrigger) {
+        lastActiveTrigger.focus();
+        lastActiveTrigger = null;
+      }
+    }
+
+    // Attach trigger to preview buttons
+    const previewTriggers = document.querySelectorAll('.cert-preview-trigger');
+    previewTriggers.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        lastActiveTrigger = btn;
+        openModal({
+          title: btn.getAttribute('data-title'),
+          issuer: btn.getAttribute('data-issuer'),
+          meta: btn.getAttribute('data-meta'),
+          img: btn.getAttribute('data-img'),
+          pdf: btn.getAttribute('data-pdf'),
+          badge: btn.getAttribute('data-badge'),
+          category: btn.getAttribute('data-category')
+        });
+      });
+    });
+
+    // Also attach trigger to media thumbnail clicks
+    const mediaWraps = document.querySelectorAll('.credential-media-wrap');
+    mediaWraps.forEach(function (wrap) {
+      wrap.addEventListener('click', function () {
+        const card = wrap.closest('.credential-card');
+        const trigger = card ? card.querySelector('.cert-preview-trigger') : null;
+        if (trigger) {
+          lastActiveTrigger = wrap;
+          trigger.click();
+        }
+      });
+      wrap.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          wrap.click();
+        }
+      });
+    });
+
+    closeBtns.forEach(function (btn) {
+      btn.addEventListener('click', closeModal);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && certModal.classList.contains('active')) {
+        closeModal();
+      }
+    });
+  }
 })();
