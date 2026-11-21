@@ -1332,13 +1332,20 @@ ol {
 }
 
 /* Horizontal Continuous Motion Showcase */
-.cert-marquee-container {
+.cert-marquee-container,
+.project-marquee-container {
   width: 100%;
   overflow: hidden;
   position: relative;
   padding: 0.75rem 0 1.5rem;
   mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  cursor: grab;
+}
+
+.cert-marquee-container:active,
+.project-marquee-container:active {
+  cursor: grabbing;
 }
 
 .cert-marquee-track {
@@ -1349,20 +1356,42 @@ ol {
   will-change: transform;
 }
 
+.project-marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: projectMarquee 34s linear infinite;
+  will-change: transform;
+}
+
 .cert-marquee-container:hover .cert-marquee-track,
 .cert-marquee-container:focus-within .cert-marquee-track,
 .cert-marquee-container:active .cert-marquee-track,
-.cert-marquee-container.is-paused .cert-marquee-track {
+.cert-marquee-container.is-paused .cert-marquee-track,
+.project-marquee-container:hover .project-marquee-track,
+.project-marquee-container:focus-within .project-marquee-track,
+.project-marquee-container:active .project-marquee-track,
+.project-marquee-container.is-paused .project-marquee-track {
   animation-play-state: paused;
 }
 
-.cert-marquee-group {
+.cert-marquee-group,
+.project-marquee-group {
   display: flex;
   gap: 1.25rem;
   flex-shrink: 0;
 }
 
 @keyframes certMarquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 0.625rem));
+  }
+}
+
+@keyframes projectMarquee {
   0% {
     transform: translateX(0);
   }
@@ -1553,6 +1582,91 @@ ol {
   color: #fbbf24;
   background-color: rgba(245, 158, 11, 0.18);
   border-color: rgba(245, 158, 11, 0.45);
+}
+
+/* Project Specific Helpers */
+.compact-project-tag {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  font-size: 0.62rem;
+}
+
+.project-status-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #16a34a;
+  background-color: rgba(22, 163, 74, 0.08);
+  border-color: rgba(22, 163, 74, 0.3);
+}
+
+[data-theme="dark"] .project-status-live {
+  color: #4ade80;
+  background-color: rgba(34, 197, 94, 0.16);
+  border-color: rgba(34, 197, 94, 0.4);
+}
+
+.status-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #22c55e;
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.7);
+  animation: statusPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes statusPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.85);
+  }
+}
+
+.project-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+}
+
+.project-tech-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 0.18rem 0.5rem;
+  background-color: var(--bg-alt);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xs);
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+.project-host-pill {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--accent-primary);
+}
+
+.project-list-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.project-code-link {
+  color: var(--text-muted);
+}
+
+.project-modal-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 0.35rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -2276,7 +2390,8 @@ ol {
     width: 100%;
   }
 
-  .cert-list-action-col .btn {
+  .cert-list-action-col .btn,
+  .project-list-actions .btn {
     flex: 1;
     justify-content: center;
   }
@@ -2318,7 +2433,8 @@ ol {
     scroll-behavior: auto !important;
   }
 
-  .cert-marquee-container {
+  .cert-marquee-container,
+  .project-marquee-container {
     overflow-x: auto;
     mask-image: none;
     -webkit-mask-image: none;
@@ -2326,11 +2442,13 @@ ol {
     padding-right: clamp(1.25rem, 3.5vw, 2.75rem);
   }
 
-  .cert-marquee-track {
+  .cert-marquee-track,
+  .project-marquee-track {
     animation: none !important;
   }
 
-  .cert-marquee-group[aria-hidden="true"] {
+  .cert-marquee-group[aria-hidden="true"],
+  .project-marquee-group[aria-hidden="true"] {
     display: none;
   }
 

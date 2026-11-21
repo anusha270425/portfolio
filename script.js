@@ -388,7 +388,7 @@
     }
 
     // Attach trigger to Compact Cards in Main Gallery (index.html)
-    const compactCards = document.querySelectorAll('.compact-cert-card');
+    const compactCards = document.querySelectorAll('.compact-cert-card:not(.compact-project-card)');
     compactCards.forEach(function (card) {
       card.addEventListener('click', function (e) {
         if (isTouchSwiping) return;
@@ -404,7 +404,7 @@
     });
 
     // Attach trigger to Vertical List Thumbnails (certifications.html)
-    const listThumbWraps = document.querySelectorAll('.cert-list-thumb-wrap');
+    const listThumbWraps = document.querySelectorAll('.cert-list-thumb-wrap:not(.project-preview-trigger)');
     listThumbWraps.forEach(function (wrap) {
       wrap.addEventListener('click', function () {
         openModal(extractCertData(wrap), wrap);
@@ -435,6 +435,160 @@
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && certModal.classList.contains('active')) {
         closeModal();
+      }
+    });
+  }
+
+  // --------------------------------------------------------------------------
+  // 9. Horizontal Project Gallery & Preview Lightbox Modal
+  // --------------------------------------------------------------------------
+  const projectMarquee = document.querySelector('.project-marquee-container');
+  let isProjectSwiping = false;
+
+  if (projectMarquee) {
+    let startX = 0;
+    let startY = 0;
+
+    projectMarquee.addEventListener('touchstart', function (e) {
+      if (e.touches && e.touches.length > 0) {
+        startX = e.touches[0].clientX;
+        startY = e.touches[0].clientY;
+        isProjectSwiping = false;
+      }
+      projectMarquee.classList.add('is-paused');
+    }, { passive: true });
+
+    projectMarquee.addEventListener('touchmove', function (e) {
+      if (e.touches && e.touches.length > 0) {
+        const dx = Math.abs(e.touches[0].clientX - startX);
+        const dy = Math.abs(e.touches[0].clientY - startY);
+        if (dx > 10 || dy > 10) {
+          isProjectSwiping = true;
+        }
+      }
+    }, { passive: true });
+
+    projectMarquee.addEventListener('touchend', function () {
+      projectMarquee.classList.remove('is-paused');
+      setTimeout(function () {
+        isProjectSwiping = false;
+      }, 80);
+    }, { passive: true });
+
+    projectMarquee.addEventListener('touchcancel', function () {
+      projectMarquee.classList.remove('is-paused');
+      isProjectSwiping = false;
+    }, { passive: true });
+  }
+
+  const projModal = document.getElementById('project-preview-modal');
+  let lastActiveProjectTrigger = null;
+
+  if (projModal) {
+    const modalImg = document.getElementById('project-modal-img');
+    const modalTitle = document.getElementById('project-modal-title');
+    const modalCategory = document.getElementById('project-modal-category');
+    const modalStatusText = document.getElementById('project-modal-status-text');
+    const modalHost = document.getElementById('project-modal-host');
+    const modalDesc = document.getElementById('project-modal-desc');
+    const modalTechWrap = document.getElementById('project-modal-tech-wrap');
+    const modalUrlLink = document.getElementById('project-modal-url-link');
+    const modalGithubLink = document.getElementById('project-modal-github-link');
+    const closeBtns = projModal.querySelectorAll('.project-modal-close-btn, .project-modal-dismiss-btn, .cert-modal-backdrop');
+
+    function extractProjectData(el) {
+      return {
+        title: el.getAttribute('data-title') || '',
+        category: el.getAttribute('data-category') || 'Web Application',
+        status: el.getAttribute('data-status') || 'Active Deploy',
+        host: el.getAttribute('data-host') || '',
+        desc: el.getAttribute('data-desc') || '',
+        tech: el.getAttribute('data-tech') || '',
+        url: el.getAttribute('data-url') || '#',
+        github: el.getAttribute('data-github') || 'https://github.com/anusha270425',
+        img: el.getAttribute('data-img') || ''
+      };
+    }
+
+    function openProjectModal(data, triggerEl) {
+      if (!data) return;
+      if (triggerEl) lastActiveProjectTrigger = triggerEl;
+
+      if (modalImg && data.img) {
+        modalImg.src = data.img;
+        modalImg.alt = (data.title ? data.title + ' Application Preview' : 'Project Preview');
+      }
+      if (modalTitle) modalTitle.textContent = data.title;
+      if (modalCategory) modalCategory.textContent = data.category;
+      if (modalStatusText) modalStatusText.textContent = data.status;
+      if (modalHost) modalHost.textContent = data.host;
+      if (modalDesc) modalDesc.textContent = data.desc;
+      if (modalUrlLink) {
+        modalUrlLink.href = data.url;
+        modalUrlLink.setAttribute('aria-label', 'Visit live app for ' + data.title);
+      }
+      if (modalGithubLink) {
+        modalGithubLink.href = data.github;
+        modalGithubLink.setAttribute('aria-label', 'View GitHub code for ' + data.title);
+      }
+
+      if (modalTechWrap) {
+        modalTechWrap.innerHTML = '';
+        if (data.tech) {
+          const items = data.tech.split('•');
+          items.forEach(function (t) {
+            const clean = t.trim();
+            if (clean) {
+              const span = document.createElement('span');
+              span.className = 'project-tech-tag';
+              span.textContent = clean;
+              modalTechWrap.appendChild(span);
+            }
+          });
+        }
+      }
+
+      projModal.classList.add('active');
+      projModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+
+      const firstClose = projModal.querySelector('.project-modal-close-btn');
+      if (firstClose) firstClose.focus();
+    }
+
+    function closeProjectModal() {
+      projModal.classList.remove('active');
+      projModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      if (lastActiveProjectTrigger && typeof lastActiveProjectTrigger.focus === 'function') {
+        lastActiveProjectTrigger.focus();
+        lastActiveProjectTrigger = null;
+      }
+    }
+
+    // Attach trigger to project triggers (compact cards and list cards)
+    const projectTriggers = document.querySelectorAll('.project-preview-trigger');
+    projectTriggers.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        if (isProjectSwiping) return;
+        if (e.target.closest('a')) return;
+        openProjectModal(extractProjectData(btn), btn);
+      });
+      btn.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openProjectModal(extractProjectData(btn), btn);
+        }
+      });
+    });
+
+    closeBtns.forEach(function (btn) {
+      btn.addEventListener('click', closeProjectModal);
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && projModal.classList.contains('active')) {
+        closeProjectModal();
       }
     });
   }

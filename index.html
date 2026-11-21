@@ -363,180 +363,621 @@
     </section>
 
     <!-- ====================================================================
-         SECTION 4: PROJECTS (ENGINEERED 2 - 3 - 2 BALANCED GRID)
+         SECTION 4: PROJECTS HORIZONTAL MOTION GALLERY
          ==================================================================== -->
     <section id="projects" class="section section-bordered" aria-labelledby="projects-heading">
       <div class="site-container">
         
-        <div class="section-header" data-aos="fade-up" data-aos-duration="450">
-          <div class="section-tag-row">
-            <span class="section-index-badge">03 / Projects</span>
+        <!-- Header with View All Link -->
+        <div class="section-header cert-section-header" data-aos="fade-up" data-aos-duration="450">
+          <div class="cert-header-left">
+            <div class="section-tag-row">
+              <span class="section-index-badge">03 / Projects</span>
+            </div>
+            <h2 id="projects-heading" class="section-title">Projects</h2>
+            <p class="section-subtitle">
+              Live web applications, utilities, and security tools engineered for real-world functionality.
+            </p>
           </div>
-          <h2 id="projects-heading" class="section-title">Selected Projects</h2>
-          <p class="section-subtitle">
-            Live web applications, utilities, and security tools engineered for real-world functionality.
-          </p>
+          <div class="cert-header-right">
+            <a href="projects.html" class="cert-view-all-link" aria-label="View all projects on dedicated page">
+              <span>View All</span>
+              <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
         </div>
 
-        <!-- 2 - 3 - 2 Balanced Layout Grid (Zero Orphan Cards) -->
-        <div class="projects-matrix-grid">
+      </div>
+
+      <!-- Horizontal Continuous Motion Showcase -->
+      <div class="project-marquee-container" aria-label="Continuously moving horizontal project gallery" data-aos="fade-up" data-aos-duration="450" data-aos-delay="60">
+        <div class="project-marquee-track">
           
-          <!-- Project 01: Certificate Manager (Row 1: 6 Cols) -->
-          <article class="project-item project-span-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="50">
-            <div class="project-header">
-              <span class="project-index">01</span>
-              <span class="project-cat-pill">Security &amp; Web</span>
-            </div>
-            <h3 class="project-name">Certificate Manager</h3>
-            <p class="project-desc">
-              Web application for organizing, managing, and accessing digital certificates.
-            </p>
-            <div class="project-footer">
-              <span class="project-host-tag">cert.uniaura.dpdns.org</span>
-              <a href="https://cert.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Certificate Manager">
-                <span>Live Demo</span>
-                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </a>
-            </div>
-          </article>
+          <!-- Primary Track Sequence (Set 1) -->
+          <div class="project-marquee-group">
+            
+            <!-- Project 01: Certificate Manager -->
+            <article class="compact-cert-card compact-project-card project-preview-trigger" role="button" tabindex="0" aria-label="Preview Certificate Manager Project"
+              data-title="Certificate Manager"
+              data-category="Security &amp; Web"
+              data-status="Active Deploy"
+              data-host="cert.uniaura.dpdns.org"
+              data-desc="Web application for organizing, managing, and accessing digital certificates."
+              data-tech="JavaScript &bull; Web Storage API &bull; CSS Grid &bull; Security UI"
+              data-url="https://cert.uniaura.dpdns.org/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/certificate-manager.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/certificate-manager.webp" alt="Certificate Manager Preview" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Security &amp; Web</span>
+                <h3 class="compact-cert-title">Certificate Manager</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">cert.uniaura.dpdns.org</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
 
-          <!-- Project 02: Random Lot Generator (Row 1: 6 Cols) -->
-          <article class="project-item project-span-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="100">
-            <div class="project-header">
-              <span class="project-index">02</span>
-              <span class="project-cat-pill">Interactive Utility</span>
-            </div>
-            <h3 class="project-name">Random Lot Generator</h3>
-            <p class="project-desc">
-              Interactive utility for randomly generating lots and dividing participants into groups.
-            </p>
-            <div class="project-footer">
-              <span class="project-host-tag">lot-gen.uniaura.dpdns.org</span>
-              <a href="https://lot-gen.uniaura.dpdns.org/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Random Lot Generator">
-                <span>Live Demo</span>
-                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </a>
-            </div>
-          </article>
+            <!-- Project 02: Random Lot Generator -->
+            <article class="compact-cert-card compact-project-card project-preview-trigger" role="button" tabindex="0" aria-label="Preview Random Lot Generator Project"
+              data-title="Random Lot Generator"
+              data-category="Interactive Utility"
+              data-status="Active Deploy"
+              data-host="lot-gen.uniaura.dpdns.org"
+              data-desc="Interactive utility for randomly generating lots and dividing participants into groups."
+              data-tech="JavaScript &bull; DOM Manipulation &bull; Algorithms &bull; CSS3 Flexbox"
+              data-url="https://lot-gen.uniaura.dpdns.org/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/random-lot-generator.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/random-lot-generator.webp" alt="Random Lot Generator Preview" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Interactive Utility</span>
+                <h3 class="compact-cert-title">Random Lot Generator</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">lot-gen.uniaura.dpdns.org</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
 
-          <!-- Project 03: File Re-namer (Row 2: 4 Cols) -->
-          <article class="project-item project-span-4" data-aos="fade-up" data-aos-duration="450" data-aos-delay="150">
-            <div class="project-header">
-              <span class="project-index">03</span>
-              <span class="project-cat-pill">File Management</span>
-            </div>
-            <h3 class="project-name">File Re-namer</h3>
-            <p class="project-desc">
-              Browser-based tool for batch renaming and organizing files efficiently.
-            </p>
-            <div class="project-footer">
-              <span class="project-host-tag">file-re-namer.vercel.app</span>
-              <a href="https://file-re-namer.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of File Re-namer">
-                <span>Live Demo</span>
-                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </a>
-            </div>
-          </article>
+            <!-- Project 03: File Re-namer -->
+            <article class="compact-cert-card compact-project-card project-preview-trigger" role="button" tabindex="0" aria-label="Preview File Re-namer Project"
+              data-title="File Re-namer"
+              data-category="File Management"
+              data-status="Active Deploy"
+              data-host="file-re-namer.vercel.app"
+              data-desc="Browser-based tool for batch renaming and organizing files efficiently."
+              data-tech="JavaScript &bull; HTML5 File API &bull; Batch Processing &bull; Vercel"
+              data-url="https://file-re-namer.vercel.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/file-re-namer.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/file-re-namer.webp" alt="File Re-namer Preview" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">File Management</span>
+                <h3 class="compact-cert-title">File Re-namer</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">file-re-namer.vercel.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
 
-          <!-- Project 04: Zip Link (Row 2: 4 Cols) -->
-          <article class="project-item project-span-4" data-aos="fade-up" data-aos-duration="450" data-aos-delay="200">
-            <div class="project-header">
-              <span class="project-index">04</span>
-              <span class="project-cat-pill">Compression</span>
-            </div>
-            <h3 class="project-name">Zip Link</h3>
-            <p class="project-desc">
-              File compression utility that packages files and generates shareable links.
-            </p>
-            <div class="project-footer">
-              <span class="project-host-tag">zip-link-five.vercel.app</span>
-              <a href="https://zip-link-five.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Zip Link">
-                <span>Live Demo</span>
-                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </a>
-            </div>
-          </article>
+            <!-- Project 04: Zip Link -->
+            <article class="compact-cert-card compact-project-card project-preview-trigger" role="button" tabindex="0" aria-label="Preview Zip Link Project"
+              data-title="Zip Link"
+              data-category="Compression"
+              data-status="Active Deploy"
+              data-host="zip-link-five.vercel.app"
+              data-desc="File compression utility that packages files and generates shareable links."
+              data-tech="JavaScript &bull; Client Compression &bull; Blob URLs &bull; Vercel"
+              data-url="https://zip-link-five.vercel.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/zip-link.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/zip-link.webp" alt="Zip Link Preview" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Compression</span>
+                <h3 class="compact-cert-title">Zip Link</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">zip-link-five.vercel.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
 
-          <!-- Project 05: Expense Tracker (Row 2: 4 Cols) -->
-          <article class="project-item project-span-4" data-aos="fade-up" data-aos-duration="450" data-aos-delay="250">
-            <div class="project-header">
-              <span class="project-index">05</span>
-              <span class="project-cat-pill">Personal Finance</span>
-            </div>
-            <h3 class="project-name">Expense Tracker</h3>
-            <p class="project-desc">
-              Personal finance tracker for logging, categorizing, and monitoring daily expenses.
-            </p>
-            <div class="project-footer">
-              <span class="project-host-tag">expense-dnzg.vercel.app</span>
-              <a href="https://expense-dnzg.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Expense Tracker">
-                <span>Live Demo</span>
-                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </a>
-            </div>
-          </article>
+            <!-- Project 05: Expense Tracker -->
+            <article class="compact-cert-card compact-project-card project-preview-trigger" role="button" tabindex="0" aria-label="Preview Expense Tracker Project"
+              data-title="Expense Tracker"
+              data-category="Personal Finance"
+              data-status="Active Deploy"
+              data-host="expense-dnzg.vercel.app"
+              data-desc="Personal finance tracker for logging, categorizing, and monitoring daily expenses."
+              data-tech="JavaScript &bull; State Management &bull; LocalStorage &bull; Vercel"
+              data-url="https://expense-dnzg.vercel.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/expense-tracker.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/expense-tracker.webp" alt="Expense Tracker Preview" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Personal Finance</span>
+                <h3 class="compact-cert-title">Expense Tracker</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">expense-dnzg.vercel.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
 
-          <!-- Project 06: Password Vault (Row 3: 6 Cols) -->
-          <article class="project-item project-span-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="300">
-            <div class="project-header">
-              <span class="project-index">06</span>
-              <span class="project-cat-pill">Security &amp; Auth</span>
-            </div>
-            <h3 class="project-name">Password Vault</h3>
-            <p class="project-desc">
-              Secure credential management application for storing and organizing passwords.
-            </p>
-            <div class="project-footer">
-              <span class="project-host-tag">pasvault.netlify.app</span>
-              <a href="https://pasvault.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Password Vault">
-                <span>Live Demo</span>
-                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </a>
-            </div>
-          </article>
+            <!-- Project 06: Password Vault -->
+            <article class="compact-cert-card compact-project-card project-preview-trigger" role="button" tabindex="0" aria-label="Preview Password Vault Project"
+              data-title="Password Vault"
+              data-category="Security &amp; Auth"
+              data-status="Active Deploy"
+              data-host="pasvault.netlify.app"
+              data-desc="Secure credential management application for storing and organizing passwords."
+              data-tech="Web Crypto API &bull; Client Hashing &bull; Security Architecture &bull; Netlify"
+              data-url="https://pasvault.netlify.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/password-vault.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/password-vault.webp" alt="Password Vault Preview" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Security &amp; Auth</span>
+                <h3 class="compact-cert-title">Password Vault</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">pasvault.netlify.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
 
-          <!-- Project 07: Todo Mission (Row 3: 6 Cols) -->
-          <article class="project-item project-span-6" data-aos="fade-up" data-aos-duration="450" data-aos-delay="350">
-            <div class="project-header">
-              <span class="project-index">07</span>
-              <span class="project-cat-pill">Productivity</span>
-            </div>
-            <h3 class="project-name">Todo Mission</h3>
-            <p class="project-desc">
-              Task and mission management web app for tracking daily goals and priorities.
-            </p>
-            <div class="project-footer">
-              <span class="project-host-tag">todomission.netlify.app</span>
-              <a href="https://todomission.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project" aria-label="Open live demo of Todo Mission">
-                <span>Live Demo</span>
-                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <line x1="7" y1="17" x2="17" y2="7"></line>
-                  <polyline points="7 7 17 7 17 17"></polyline>
-                </svg>
-              </a>
-            </div>
-          </article>
+            <!-- Project 07: Todo Mission -->
+            <article class="compact-cert-card compact-project-card project-preview-trigger" role="button" tabindex="0" aria-label="Preview Todo Mission Project"
+              data-title="Todo Mission"
+              data-category="Productivity"
+              data-status="Active Deploy"
+              data-host="todomission.netlify.app"
+              data-desc="Task and mission management web app for tracking daily goals and priorities."
+              data-tech="JavaScript &bull; DOM State &bull; Task Pipelines &bull; Netlify"
+              data-url="https://todomission.netlify.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/todo-mission.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/todo-mission.webp" alt="Todo Mission Preview" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Productivity</span>
+                <h3 class="compact-cert-title">Todo Mission</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">todomission.netlify.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Duplicate Track Sequence for Seamless Infinite Looping (Set 2) -->
+          <div class="project-marquee-group" aria-hidden="true">
+            
+            <!-- Project 01 Duplicate -->
+            <article class="compact-cert-card compact-project-card" tabindex="-1" aria-hidden="true"
+              data-title="Certificate Manager"
+              data-category="Security &amp; Web"
+              data-status="Active Deploy"
+              data-host="cert.uniaura.dpdns.org"
+              data-desc="Web application for organizing, managing, and accessing digital certificates."
+              data-tech="JavaScript &bull; Web Storage API &bull; CSS Grid &bull; Security UI"
+              data-url="https://cert.uniaura.dpdns.org/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/certificate-manager.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/certificate-manager.webp" alt="" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Security &amp; Web</span>
+                <h3 class="compact-cert-title">Certificate Manager</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">cert.uniaura.dpdns.org</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 02 Duplicate -->
+            <article class="compact-cert-card compact-project-card" tabindex="-1" aria-hidden="true"
+              data-title="Random Lot Generator"
+              data-category="Interactive Utility"
+              data-status="Active Deploy"
+              data-host="lot-gen.uniaura.dpdns.org"
+              data-desc="Interactive utility for randomly generating lots and dividing participants into groups."
+              data-tech="JavaScript &bull; DOM Manipulation &bull; Algorithms &bull; CSS3 Flexbox"
+              data-url="https://lot-gen.uniaura.dpdns.org/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/random-lot-generator.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/random-lot-generator.webp" alt="" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Interactive Utility</span>
+                <h3 class="compact-cert-title">Random Lot Generator</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">lot-gen.uniaura.dpdns.org</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 03 Duplicate -->
+            <article class="compact-cert-card compact-project-card" tabindex="-1" aria-hidden="true"
+              data-title="File Re-namer"
+              data-category="File Management"
+              data-status="Active Deploy"
+              data-host="file-re-namer.vercel.app"
+              data-desc="Browser-based tool for batch renaming and organizing files efficiently."
+              data-tech="JavaScript &bull; HTML5 File API &bull; Batch Processing &bull; Vercel"
+              data-url="https://file-re-namer.vercel.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/file-re-namer.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/file-re-namer.webp" alt="" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">File Management</span>
+                <h3 class="compact-cert-title">File Re-namer</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">file-re-namer.vercel.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 04 Duplicate -->
+            <article class="compact-cert-card compact-project-card" tabindex="-1" aria-hidden="true"
+              data-title="Zip Link"
+              data-category="Compression"
+              data-status="Active Deploy"
+              data-host="zip-link-five.vercel.app"
+              data-desc="File compression utility that packages files and generates shareable links."
+              data-tech="JavaScript &bull; Client Compression &bull; Blob URLs &bull; Vercel"
+              data-url="https://zip-link-five.vercel.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/zip-link.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/zip-link.webp" alt="" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Compression</span>
+                <h3 class="compact-cert-title">Zip Link</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">zip-link-five.vercel.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 05 Duplicate -->
+            <article class="compact-cert-card compact-project-card" tabindex="-1" aria-hidden="true"
+              data-title="Expense Tracker"
+              data-category="Personal Finance"
+              data-status="Active Deploy"
+              data-host="expense-dnzg.vercel.app"
+              data-desc="Personal finance tracker for logging, categorizing, and monitoring daily expenses."
+              data-tech="JavaScript &bull; State Management &bull; LocalStorage &bull; Vercel"
+              data-url="https://expense-dnzg.vercel.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/expense-tracker.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/expense-tracker.webp" alt="" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Personal Finance</span>
+                <h3 class="compact-cert-title">Expense Tracker</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">expense-dnzg.vercel.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 06 Duplicate -->
+            <article class="compact-cert-card compact-project-card" tabindex="-1" aria-hidden="true"
+              data-title="Password Vault"
+              data-category="Security &amp; Auth"
+              data-status="Active Deploy"
+              data-host="pasvault.netlify.app"
+              data-desc="Secure credential management application for storing and organizing passwords."
+              data-tech="Web Crypto API &bull; Client Hashing &bull; Security Architecture &bull; Netlify"
+              data-url="https://pasvault.netlify.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/password-vault.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/password-vault.webp" alt="" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Security &amp; Auth</span>
+                <h3 class="compact-cert-title">Password Vault</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">pasvault.netlify.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 07 Duplicate -->
+            <article class="compact-cert-card compact-project-card" tabindex="-1" aria-hidden="true"
+              data-title="Todo Mission"
+              data-category="Productivity"
+              data-status="Active Deploy"
+              data-host="todomission.netlify.app"
+              data-desc="Task and mission management web app for tracking daily goals and priorities."
+              data-tech="JavaScript &bull; DOM State &bull; Task Pipelines &bull; Netlify"
+              data-url="https://todomission.netlify.app/"
+              data-github="https://github.com/anusha270425"
+              data-img="./assets/projects/thumbnails/todo-mission.webp">
+              <div class="compact-cert-media">
+                <img src="./assets/projects/thumbnails/todo-mission.webp" alt="" class="compact-cert-img" loading="lazy" width="900" height="560">
+                <div class="compact-cert-overlay" aria-hidden="true">
+                  <span class="compact-zoom-badge">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="compact-zoom-icon">
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>Preview</span>
+                  </span>
+                </div>
+                <span class="credential-status project-status-live compact-cert-badge">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  Live App
+                </span>
+              </div>
+              <div class="compact-cert-info">
+                <span class="credential-cat-tag compact-project-tag">Productivity</span>
+                <h3 class="compact-cert-title">Todo Mission</h3>
+                <div class="compact-cert-meta-row">
+                  <span class="compact-cert-issuer">todomission.netlify.app</span>
+                  <span class="compact-cert-year">Live ↗</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
 
         </div>
+      </div>
 
+      <div class="site-container">
+        <!-- Project Interactive Preview Lightbox Modal -->
+        <div id="project-preview-modal" class="cert-modal project-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="project-modal-title">
+          <div class="cert-modal-backdrop" tabindex="-1"></div>
+          <div class="cert-modal-dialog">
+            <div class="cert-modal-header">
+              <div class="cert-modal-header-meta">
+                <span id="project-modal-category" class="credential-cat-tag">Category</span>
+                <span id="project-modal-status" class="credential-status project-status-live">
+                  <span class="status-live-dot" aria-hidden="true"></span>
+                  <span id="project-modal-status-text">Active Deploy</span>
+                </span>
+              </div>
+              <button type="button" class="cert-modal-close-btn project-modal-close-btn" aria-label="Close project preview">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="18" y1="6" x2="6" y2="18"></line>
+                  <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+            <div class="cert-modal-body">
+              <div class="cert-modal-image-stage">
+                <img id="project-modal-img" src="" alt="Project Application Preview" class="cert-modal-img">
+              </div>
+              <div class="cert-modal-details">
+                <h3 id="project-modal-title" class="cert-modal-title">Project Title</h3>
+                <p id="project-modal-host" class="cert-modal-issuer">domain.dpdns.org</p>
+                <p id="project-modal-desc" class="project-modal-desc">Description of the project.</p>
+                <div id="project-modal-tech-wrap" class="project-tech-tags">
+                  <!-- Dynamically injected tech tags -->
+                </div>
+              </div>
+            </div>
+            <div class="cert-modal-footer">
+              <button type="button" class="btn btn-sm btn-secondary project-modal-dismiss-btn">Close</button>
+              <a id="project-modal-github-link" href="https://github.com/anusha270425" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="btn-action-icon" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+              <a id="project-modal-url-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-project">
+                <span>Visit Live App</span>
+                <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
