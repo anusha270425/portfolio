@@ -14,7 +14,45 @@
   <!-- AOS (Animate On Scroll) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
+  <style>
+    /* Ensure View All buttons sit in the far right corner across all viewports */
+    .cert-section-header {
+      display: flex !important;
+      align-items: flex-end !important;
+      justify-content: space-between !important;
+      width: 100% !important;
+      max-width: 100% !important;
+      gap: 1.5rem !important;
+      margin-bottom: 2rem !important;
+    }
+    .cert-header-left {
+      max-width: 680px !important;
+      flex: 1 1 auto !important;
+    }
+    .cert-header-right {
+      margin-left: auto !important;
+      margin-bottom: 0.35rem !important;
+      flex-shrink: 0 !important;
+      display: flex !important;
+      justify-content: flex-end !important;
+    }
+    @media (max-width: 640px) {
+      .cert-section-header {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 0.85rem !important;
+      }
+      .cert-header-right {
+        width: 100% !important;
+        margin-left: 0 !important;
+      }
+      .cert-view-all-link {
+        width: 100% !important;
+        justify-content: center !important;
+      }
+    }
+  </style>
 </head>
 <body class="site-body">
   <!-- Accessibility Skip Link -->
@@ -369,8 +407,8 @@
       <div class="site-container">
         
         <!-- Header with View All Link -->
-        <div class="section-header cert-section-header" data-aos="fade-up" data-aos-duration="450">
-          <div class="cert-header-left">
+        <div class="cert-section-header" data-aos="fade-up" data-aos-duration="450" style="display: flex; align-items: flex-end; justify-content: space-between; width: 100%; max-width: 100%; gap: 1.5rem; margin-bottom: 2rem;">
+          <div class="cert-header-left" style="max-width: 680px; flex: 1 1 auto;">
             <div class="section-tag-row">
               <span class="section-index-badge">03 / Projects</span>
             </div>
@@ -379,7 +417,7 @@
               Live web applications, utilities, and security tools engineered for real-world functionality.
             </p>
           </div>
-          <div class="cert-header-right">
+          <div class="cert-header-right" style="margin-left: auto; margin-bottom: 0.35rem; flex-shrink: 0;">
             <a href="projects.html" class="cert-view-all-link" aria-label="View all projects on dedicated page">
               <span>View All</span>
               <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -968,8 +1006,8 @@
       <div class="site-container">
         
         <!-- Header with View All Link -->
-        <div class="section-header cert-section-header" data-aos="fade-up" data-aos-duration="450">
-          <div class="cert-header-left">
+        <div class="cert-section-header" data-aos="fade-up" data-aos-duration="450" style="display: flex; align-items: flex-end; justify-content: space-between; width: 100%; max-width: 100%; gap: 1.5rem; margin-bottom: 2rem;">
+          <div class="cert-header-left" style="max-width: 680px; flex: 1 1 auto;">
             <div class="section-tag-row">
               <span class="section-index-badge">04 / Certifications</span>
             </div>
@@ -978,7 +1016,7 @@
               Verified credentials in Java programming, cybersecurity architectures, web development, and AI engineering.
             </p>
           </div>
-          <div class="cert-header-right">
+          <div class="cert-header-right" style="margin-left: auto; margin-bottom: 0.35rem; flex-shrink: 0;">
             <a href="certifications.html" class="cert-view-all-link" aria-label="View all certifications on dedicated page">
               <span>View All</span>
               <svg class="btn-external-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

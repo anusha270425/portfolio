@@ -1286,21 +1286,30 @@ ol {
 /* --------------------------------------------------------------------------
    10. Section 5: Certifications Horizontal Motion Gallery & Dedicated Listing
    -------------------------------------------------------------------------- */
-.cert-section-header {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+.cert-section-header,
+.section-header.cert-section-header,
+#projects .cert-section-header,
+#certifications .cert-section-header {
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  gap: 1.5rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .cert-header-left {
-  max-width: 680px;
+  max-width: 680px !important;
+  flex: 1 1 auto !important;
 }
 
 .cert-header-right {
-  margin-bottom: 0.35rem;
-  flex-shrink: 0;
+  margin-left: auto !important;
+  margin-bottom: 0.35rem !important;
+  flex-shrink: 0 !important;
+  display: flex !important;
+  justify-content: flex-end !important;
 }
 
 .cert-view-all-link {
