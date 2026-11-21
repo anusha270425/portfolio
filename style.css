@@ -1658,10 +1658,6 @@ ol {
   flex-wrap: wrap;
 }
 
-.project-code-link {
-  color: var(--text-muted);
-}
-
 .project-modal-desc {
   font-size: 0.92rem;
   color: var(--text-secondary);

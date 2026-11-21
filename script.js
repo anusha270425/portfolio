@@ -493,7 +493,6 @@
     const modalDesc = document.getElementById('project-modal-desc');
     const modalTechWrap = document.getElementById('project-modal-tech-wrap');
     const modalUrlLink = document.getElementById('project-modal-url-link');
-    const modalGithubLink = document.getElementById('project-modal-github-link');
     const closeBtns = projModal.querySelectorAll('.project-modal-close-btn, .project-modal-dismiss-btn, .cert-modal-backdrop');
 
     function extractProjectData(el) {
@@ -505,7 +504,6 @@
         desc: el.getAttribute('data-desc') || '',
         tech: el.getAttribute('data-tech') || '',
         url: el.getAttribute('data-url') || '#',
-        github: el.getAttribute('data-github') || 'https://github.com/anusha270425',
         img: el.getAttribute('data-img') || ''
       };
     }
@@ -526,10 +524,6 @@
       if (modalUrlLink) {
         modalUrlLink.href = data.url;
         modalUrlLink.setAttribute('aria-label', 'Visit live app for ' + data.title);
-      }
-      if (modalGithubLink) {
-        modalGithubLink.href = data.github;
-        modalGithubLink.setAttribute('aria-label', 'View GitHub code for ' + data.title);
       }
 
       if (modalTechWrap) {
